@@ -1,7 +1,8 @@
 import { ImageResponse } from 'next/og'
 import { getPostBySlug } from '@/lib/blog/posts'
+import { readFile } from 'fs/promises'
+import { join } from 'path'
 
-export const runtime = 'edge'
 export const alt = 'L8 Capital Blog'
 export const size = {
   width: 1200,
@@ -13,11 +14,10 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug } = await params
   const post = getPostBySlug(slug)
 
-  // Fetch logo image
-  const logoUrl = new URL('/images/logos/l8-logo.png', 'https://l8capital.com.br')
-  const logoResponse = await fetch(logoUrl)
-  const logoBuffer = await logoResponse.arrayBuffer()
-  const logoBase64 = `data:image/png;base64,${Buffer.from(logoBuffer).toString('base64')}`
+  // Read logo file directly from filesystem
+  const logoPath = join(process.cwd(), 'public', 'images', 'logos', 'l8-logo-v2.png')
+  const logoBuffer = await readFile(logoPath)
+  const logoBase64 = `data:image/png;base64,${logoBuffer.toString('base64')}`
 
   if (!post) {
     return new ImageResponse(

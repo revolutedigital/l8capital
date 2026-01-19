@@ -86,10 +86,17 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
+              {/* Light mode logo */}
               <img
-                src="/images/logos/l8-logo.png"
+                src="/images/logos/l8-logo_transp_preto.png"
                 alt="L8 Capital - Soluções Financeiras para Imobiliárias"
-                className="w-full h-full object-contain transition-transform group-hover:scale-105"
+                className="w-full h-full object-contain transition-transform group-hover:scale-105 dark:hidden"
+              />
+              {/* Dark mode logo */}
+              <img
+                src="/images/logos/l8-logo_transp_branco.png"
+                alt="L8 Capital - Soluções Financeiras para Imobiliárias"
+                className="w-full h-full object-contain transition-transform group-hover:scale-105 hidden dark:block"
               />
             </div>
             <div className="hidden sm:block">
