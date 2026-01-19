@@ -33,14 +33,15 @@ export function ThemeToggle({ className }: { className?: string }) {
     return (
       <button
         className={cn(
-          'p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300',
+          'p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300',
           'hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors',
           'focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500',
+          'min-w-[44px] min-h-[44px] flex items-center justify-center',
           className
         )}
         aria-label="Alternar tema"
       >
-        <Sun className="h-5 w-5" />
+        <Sun className="h-5 w-5 md:h-5 md:w-5" />
       </button>
     )
   }
@@ -49,18 +50,19 @@ export function ThemeToggle({ className }: { className?: string }) {
     <button
       onClick={toggleTheme}
       className={cn(
-        'p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300',
+        'p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300',
         'hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors',
         'focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500',
+        'min-w-[44px] min-h-[44px] flex items-center justify-center',
         className
       )}
       aria-label={theme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro'}
       title={theme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro'}
     >
       {theme === 'light' ? (
-        <Moon className="h-5 w-5" aria-hidden="true" />
+        <Moon className="h-5 w-5 md:h-5 md:w-5" aria-hidden="true" />
       ) : (
-        <Sun className="h-5 w-5" aria-hidden="true" />
+        <Sun className="h-5 w-5 md:h-5 md:w-5" aria-hidden="true" />
       )}
     </button>
   )
