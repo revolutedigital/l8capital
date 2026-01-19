@@ -99,31 +99,27 @@ export function Preloader({ onComplete, minDuration = 2000 }: PreloaderProps) {
           transition={{ duration: 0.5, ease: 'easeOut' }}
         >
           <motion.div
-            className="relative w-24 h-24 md:w-32 md:h-32"
+            className="relative w-32 h-32 md:w-40 md:h-40"
             animate={isExiting ? { scale: 1.5, opacity: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            {/* Logo container with glow */}
+            {/* Logo with glow effect */}
             <motion.div
-              className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary-500 to-primary-600 shadow-2xl"
+              className="absolute inset-0 flex items-center justify-center"
               animate={{
-                boxShadow: [
-                  '0 0 40px rgba(15, 76, 129, 0.4)',
-                  '0 0 80px rgba(15, 76, 129, 0.6)',
-                  '0 0 40px rgba(15, 76, 129, 0.4)',
+                filter: [
+                  'drop-shadow(0 0 20px rgba(15, 76, 129, 0.4))',
+                  'drop-shadow(0 0 40px rgba(15, 76, 129, 0.6))',
+                  'drop-shadow(0 0 20px rgba(15, 76, 129, 0.4))',
                 ],
               }}
               transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            />
-
-            {/* L8 Text */}
-            <motion.div
-              className="absolute inset-0 flex items-center justify-center"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
             >
-              <span className="text-white font-bold text-4xl md:text-5xl font-display">L8</span>
+              <img
+                src="/images/logos/l8-logo.png"
+                alt="L8 Capital"
+                className="w-full h-full object-contain"
+              />
             </motion.div>
 
             {/* Animated ring */}

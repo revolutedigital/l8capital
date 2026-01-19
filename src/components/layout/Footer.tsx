@@ -74,8 +74,12 @@ export function Footer() {
             className="lg:col-span-4"
           >
             <Link href="/" className="flex items-center gap-3 mb-6 group">
-              <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center shadow-lg shadow-primary-600/30 group-hover:shadow-xl group-hover:shadow-primary-600/40 transition-all">
-                <span className="text-white font-bold text-xl">L8</span>
+              <div className="relative w-12 h-12 flex items-center justify-center">
+                <img
+                  src="/images/logos/l8-logo.png"
+                  alt="L8 Capital - Soluções Financeiras para Imobiliárias"
+                  className="w-full h-full object-contain transition-transform group-hover:scale-105"
+                />
               </div>
               <div>
                 <span className="font-display font-bold text-xl text-white">

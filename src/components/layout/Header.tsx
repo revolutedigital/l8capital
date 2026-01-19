@@ -85,8 +85,12 @@ export function Header() {
         <div className="flex items-center justify-between h-18 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 md:w-11 md:h-11 rounded-xl overflow-hidden bg-gradient-to-br from-primary-600 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-600/20 group-hover:shadow-xl group-hover:shadow-primary-600/30 transition-all">
-              <span className="text-white font-bold text-xl">L8</span>
+            <div className="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
+              <img
+                src="/images/logos/l8-logo.png"
+                alt="L8 Capital - Soluções Financeiras para Imobiliárias"
+                className="w-full h-full object-contain transition-transform group-hover:scale-105"
+              />
             </div>
             <div className="hidden sm:block">
               <span className="font-display font-bold text-xl text-gray-900 dark:text-white">
