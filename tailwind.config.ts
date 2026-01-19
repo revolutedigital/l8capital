@@ -65,7 +65,7 @@ const config: Config = {
         'fluid-xl': 'clamp(1.25rem, 1.1rem + 0.75vw, 1.625rem)',
         'fluid-2xl': 'clamp(1.5rem, 1.25rem + 1.25vw, 2.125rem)',
         'fluid-3xl': 'clamp(1.875rem, 1.5rem + 1.875vw, 2.75rem)',
-        'fluid-4xl': 'clamp(2.25rem, 1.75rem + 2.5vw, 3.5rem)',
+        'fluid-4xl': 'clamp(2.25rem, 1.75rem + 2.5vw, 3.0rem)',
         'fluid-5xl': 'clamp(3rem, 2.25rem + 3.75vw, 4.5rem)',
       },
       spacing: {
