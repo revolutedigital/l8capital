@@ -85,7 +85,7 @@ export function HowItWorks() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 mt-6 relative z-10">
                     {step.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 relative z-10 max-w-xs mx-auto">
