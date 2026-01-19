@@ -53,7 +53,7 @@ export function Hero() {
       <div className="absolute bottom-32 right-[15%] w-48 h-48 bg-primary-500/10 rounded-full blur-3xl" />
 
       <div className="container-custom relative z-10 py-24 md:py-32 lg:py-40">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
           <motion.div
             variants={container}
@@ -136,7 +136,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.25, delay: 0.4 }}
-              className="absolute -bottom-6 -left-6 lg:-left-12"
+              className="absolute -bottom-6 right-0 lg:-right-6"
             >
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-5 border border-gray-100 dark:border-gray-700">
                 <div className="flex items-center gap-4">
