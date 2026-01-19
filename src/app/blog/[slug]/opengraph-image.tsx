@@ -13,6 +13,12 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug } = await params
   const post = getPostBySlug(slug)
 
+  // Fetch logo image
+  const logoUrl = new URL('/images/logos/l8-logo.png', 'https://l8capital.com.br')
+  const logoResponse = await fetch(logoUrl)
+  const logoBuffer = await logoResponse.arrayBuffer()
+  const logoBase64 = `data:image/png;base64,${Buffer.from(logoBuffer).toString('base64')}`
+
   if (!post) {
     return new ImageResponse(
       (
@@ -55,20 +61,15 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             marginBottom: 40,
           }}
         >
-          <div
+          <img
+            src={logoBase64}
+            alt="L8 Capital"
+            width={60}
+            height={60}
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: 60,
-              height: 60,
-              background: 'rgba(255,255,255,0.15)',
-              borderRadius: 12,
               marginRight: 16,
             }}
-          >
-            <span style={{ fontSize: 32, fontWeight: 800, color: 'white' }}>L8</span>
-          </div>
+          />
           <span style={{ fontSize: 24, color: 'rgba(255,255,255,0.8)' }}>Blog</span>
         </div>
 
