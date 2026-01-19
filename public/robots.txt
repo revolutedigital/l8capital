@@ -1,0 +1,17 @@
+# L8 Capital - Robots.txt
+# https://l8capital.com.br
+
+User-agent: *
+Allow: /
+Allow: /blog/
+
+# Block internal paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://l8capital.com.br/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

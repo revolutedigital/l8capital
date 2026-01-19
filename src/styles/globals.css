@@ -1,0 +1,446 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   L8 CAPITAL - DESIGN SYSTEM CSS
+   Modern Fintech Design | 2024
+   ============================================ */
+
+@layer base {
+  :root {
+    /* Background & Surface */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #FAFBFC;
+    --bg-tertiary: #F3F4F6;
+    --bg-inverse: #111827;
+
+    --surface-card: #FFFFFF;
+    --surface-elevated: #FFFFFF;
+    --surface-overlay: rgba(0, 0, 0, 0.5);
+
+    /* Text */
+    --text-primary: #111827;
+    --text-secondary: #4B5563;
+    --text-tertiary: #6B7280;
+    --text-disabled: #9CA3AF;
+    --text-inverse: #FFFFFF;
+
+    /* Border */
+    --border-light: #E5E7EB;
+    --border-medium: #D1D5DB;
+    --border-dark: #9CA3AF;
+
+    /* Focus Ring */
+    --ring-offset: 2px;
+    --ring-width: 2px;
+    --ring-color: #3479B6;
+  }
+
+  /* Dark Mode */
+  .dark {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+
+    --surface-card: #1e293b;
+    --surface-elevated: #334155;
+
+    --text-primary: #f8fafc;
+    --text-secondary: #e2e8f0;
+    --text-tertiary: #94a3b8;
+
+    --border-light: #334155;
+    --border-medium: #475569;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased;
+    /* Inter: OpenType features para melhor legibilidade */
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    /* Tamanho mínimo 16px para acessibilidade */
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Números tabulares para valores financeiros (R$ 2.050) */
+  .tabular-nums {
+    font-feature-settings: "tnum" 1, "lnum" 1;
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+
+  /* Focus visible for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-primary-600 text-white;
+  }
+
+  /* Smooth scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-gray-500;
+  }
+}
+
+@layer components {
+  /* ============================================
+     TYPOGRAPHY PRESETS - Plus Jakarta Sans + Inter
+     ============================================ */
+
+  /* Display Typography - Plus Jakarta Sans */
+  .heading-1 {
+    @apply font-display text-fluid-4xl font-bold leading-tight;
+    letter-spacing: -0.02em;
+  }
+
+  .heading-2 {
+    @apply font-display text-fluid-3xl font-semibold leading-tight;
+    letter-spacing: -0.015em;
+  }
+
+  .heading-3 {
+    @apply font-display text-fluid-2xl font-semibold leading-snug;
+    letter-spacing: -0.01em;
+  }
+
+  .heading-4 {
+    @apply font-display text-fluid-xl font-semibold leading-snug;
+    letter-spacing: -0.005em;
+  }
+
+  /* Body Typography - Inter */
+  .body-large {
+    @apply font-body text-fluid-lg font-normal;
+    line-height: 1.65;
+  }
+
+  .body {
+    @apply font-body text-fluid-base font-normal;
+    line-height: 1.6;
+  }
+
+  .body-small {
+    @apply font-body text-fluid-sm font-normal;
+    line-height: 1.55;
+  }
+
+  .caption {
+    @apply font-body text-fluid-xs font-medium;
+    line-height: 1.5;
+  }
+
+  /* Valores financeiros com números tabulares */
+  .stat-value {
+    @apply font-display font-bold tabular-nums;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply w-full max-w-[1200px] mx-auto px-container-x;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-section;
+  }
+
+  /* ============================================
+     CARD STYLES
+     ============================================ */
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700;
+  }
+
+  .card-elevated {
+    @apply card shadow-lg hover:shadow-xl transition-shadow;
+  }
+
+  .card-interactive {
+    @apply card-elevated hover:-translate-y-1 transition-all duration-300;
+  }
+
+  /* ============================================
+     GLASS MORPHISM
+     ============================================ */
+
+  .glass {
+    @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl;
+  }
+
+  .glass-subtle {
+    @apply bg-white/50 dark:bg-gray-900/50 backdrop-blur-md;
+  }
+
+  /* ============================================
+     GRADIENT TEXT
+     ============================================ */
+
+  .gradient-text-primary {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400;
+  }
+
+  .gradient-text-secondary {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary-500 to-secondary-400;
+  }
+
+  .gradient-text-accent {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-500 to-accent-400;
+  }
+
+  /* ============================================
+     BUTTON ENHANCEMENTS
+     ============================================ */
+
+  .btn-glow {
+    @apply relative overflow-hidden;
+  }
+
+  .btn-glow::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  .btn-glow:hover::before {
+    transform: translateX(100%);
+  }
+
+  /* ============================================
+     ANIMATION UTILITIES
+     ============================================ */
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Optimized blob animations - GPU accelerated for 120Hz+ displays */
+  .animate-blob-1 {
+    animation: blob-move-1 25s linear infinite;
+    will-change: transform;
+  }
+
+  .animate-blob-2 {
+    animation: blob-move-2 30s linear infinite;
+    will-change: transform;
+  }
+
+  .animate-blob-3 {
+    animation: blob-move-3 35s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes blob-move-1 {
+    0% { transform: translate3d(0, 0, 0) skewY(-6deg); }
+    25% { transform: translate3d(20px, -15px, 0) skewY(-6deg); }
+    50% { transform: translate3d(-10px, 10px, 0) skewY(-6deg); }
+    75% { transform: translate3d(15px, 5px, 0) skewY(-6deg); }
+    100% { transform: translate3d(0, 0, 0) skewY(-6deg); }
+  }
+
+  @keyframes blob-move-2 {
+    0% { transform: translate3d(0, 0, 0) skewY(-6deg); }
+    25% { transform: translate3d(-15px, 10px, 0) skewY(-6deg); }
+    50% { transform: translate3d(10px, -20px, 0) skewY(-6deg); }
+    75% { transform: translate3d(-5px, 15px, 0) skewY(-6deg); }
+    100% { transform: translate3d(0, 0, 0) skewY(-6deg); }
+  }
+
+  @keyframes blob-move-3 {
+    0% { transform: translate3d(0, 0, 0) skewY(-6deg); }
+    33% { transform: translate3d(10px, 10px, 0) skewY(-6deg); }
+    66% { transform: translate3d(-10px, -5px, 0) skewY(-6deg); }
+    100% { transform: translate3d(0, 0, 0) skewY(-6deg); }
+  }
+
+  /* ============================================
+     DECORATIVE ELEMENTS
+     ============================================ */
+
+  .blob {
+    @apply absolute rounded-full blur-3xl opacity-30;
+  }
+
+  .blob-primary {
+    @apply blob bg-primary-500;
+  }
+
+  .blob-secondary {
+    @apply blob bg-secondary-500;
+  }
+
+  .blob-accent {
+    @apply blob bg-accent-500;
+  }
+
+  /* Grid pattern background */
+  .bg-grid-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23000000' stroke-width='0.5' stroke-opacity='0.05'%3E%3Cpath d='M0 0h60v60H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .dark .bg-grid-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23ffffff' stroke-width='0.5' stroke-opacity='0.05'%3E%3Cpath d='M0 0h60v60H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Dot pattern background */
+  .bg-dot-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05'%3E%3Ccircle cx='10' cy='10' r='1'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .dark .bg-dot-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='10' cy='10' r='1'/%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+@layer utilities {
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Gradient backgrounds */
+  .gradient-primary {
+    @apply bg-gradient-to-br from-primary-600 to-primary-800;
+  }
+
+  .gradient-hero {
+    @apply bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800;
+  }
+
+  .gradient-section {
+    @apply bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900;
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400;
+  }
+
+  /* Hover lift effect */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  /* Shadow utilities */
+  .shadow-glow-primary {
+    box-shadow: 0 0 40px rgba(15, 76, 129, 0.3);
+  }
+
+  .shadow-glow-secondary {
+    box-shadow: 0 0 40px rgba(46, 139, 87, 0.3);
+  }
+
+  .shadow-glow-accent {
+    box-shadow: 0 0 40px rgba(245, 166, 35, 0.3);
+  }
+
+  /* Border gradient */
+  .border-gradient {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
+                linear-gradient(135deg, var(--primary-500), var(--secondary-500)) border-box;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Aspect ratios for cards */
+  .aspect-card {
+    aspect-ratio: 4/3;
+  }
+
+  .aspect-card-wide {
+    aspect-ratio: 16/9;
+  }
+
+  /* Safe area for mobile */
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+}
