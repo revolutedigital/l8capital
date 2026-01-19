@@ -101,7 +101,7 @@ export function Header() {
             </div>
             <div className="hidden sm:block">
               <span className="font-display font-bold text-xl text-gray-900 dark:text-white">
-                Capital
+                L8 Capital
               </span>
               <span className="block text-xs text-gray-500 dark:text-gray-400 -mt-0.5">
                 Sua imobiliária mais forte
