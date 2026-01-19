@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import { Header, Footer } from '@/components/layout'
 import { GoogleAnalytics, WebVitals } from '@/components/analytics'
 import { Providers } from '@/components/Providers'
+import { ScrollToAnchor } from '@/components/ScrollToAnchor'
 import { SITE_CONFIG } from '@/lib/constants'
 import '@/styles/globals.css'
 
@@ -88,6 +89,7 @@ export default function RootLayout({
       <body className="font-body">
         <GoogleAnalytics />
         <WebVitals />
+        <ScrollToAnchor />
         <Providers>
           {/* Skip Link for Accessibility */}
           <a
