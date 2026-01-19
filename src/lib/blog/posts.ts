@@ -282,25 +282,31 @@ A capitalização é uma alternativa moderna ao caução tradicional. Enquanto o
   },
 ]
 
+// Importar posts gerados program aticamente (Sprint 2+)
+import { generatedPosts } from './posts-generated'
+
+// Combinar posts manuais + gerados
+const allBlogPosts: BlogPost[] = [...blogPosts, ...generatedPosts]
+
 export function getAllPosts(): BlogPost[] {
-  return blogPosts.sort(
+  return allBlogPosts.sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   )
 }
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
-  return blogPosts.find((post) => post.slug === slug)
+  return allBlogPosts.find((post) => post.slug === slug)
 }
 
 export function getFeaturedPosts(): BlogPost[] {
-  return blogPosts.filter((post) => post.featured)
+  return allBlogPosts.filter((post) => post.featured)
 }
 
 export function getPostsByCategory(category: string): BlogPost[] {
-  return blogPosts.filter((post) => post.category.toLowerCase() === category.toLowerCase())
+  return allBlogPosts.filter((post) => post.category.toLowerCase() === category.toLowerCase())
 }
 
 export function getAllCategories(): string[] {
-  const categories = blogPosts.map((post) => post.category)
+  const categories = allBlogPosts.map((post) => post.category)
   return [...new Set(categories)]
 }
