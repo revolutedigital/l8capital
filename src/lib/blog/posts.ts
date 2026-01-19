@@ -282,13 +282,31 @@ A capitalização é uma alternativa moderna ao caução tradicional. Enquanto o
   },
 ]
 
-// Importar posts gerados program aticamente (Sprint 2+)
+// Importar posts gerados programaticamente (Sprint 2+)
 import { generatedPosts } from './posts-generated'
+import { filterPublishedPosts } from './publishing-schedule'
 
 // Combinar posts manuais + gerados
 const allBlogPosts: BlogPost[] = [...blogPosts, ...generatedPosts]
 
+/**
+ * Retorna todos os posts PUBLICADOS (filtrando por progressive publishing)
+ *
+ * IMPORTANTE: Em produção, apenas posts com data de publicação <= hoje são retornados
+ * Para ver todos os posts (dev/preview), configure PUBLISHING_CONFIG.enabled = false
+ */
 export function getAllPosts(): BlogPost[] {
+  const publishedPosts = filterPublishedPosts(allBlogPosts)
+
+  return publishedPosts.sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  )
+}
+
+/**
+ * Retorna todos os posts (incluindo não publicados) - uso interno apenas
+ */
+export function getAllPostsIncludingUnpublished(): BlogPost[] {
   return allBlogPosts.sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   )
