@@ -9,8 +9,11 @@ import {
   treinamentoComercialTemplate,
   treinamentoOperacionalTemplate,
   vistoriaTemplate,
+  seguroFiancaTemplate,
+  seguroIncendioTemplate,
+  capitalizacaoTemplate,
 } from './service-templates'
-import { brazil } from './location-data'
+import { brazil, saoPauloCity } from './location-data'
 
 // Gerar posts nacionais (Sprint 2)
 const nationalPosts: BlogPost[] = [
@@ -21,9 +24,21 @@ const nationalPosts: BlogPost[] = [
   vistoriaTemplate,
 ].map((template) => toBlogPost(generatePost(template, brazil)))
 
+// Gerar posts de São Paulo Capital (Sprint 3)
+const spCapitalPosts: BlogPost[] = [
+  seguroFiancaTemplate,
+  seguroIncendioTemplate,
+  capitalizacaoTemplate,
+  rentabilizacaoFloatTemplate,
+  fundoReservaTemplate,
+  treinamentoComercialTemplate,
+  treinamentoOperacionalTemplate,
+  vistoriaTemplate,
+].map((template) => toBlogPost(generatePost(template, saoPauloCity)))
+
 export const generatedPosts: BlogPost[] = [
   ...nationalPosts,
-  // Futuros posts de SP Capital virão aqui (Sprint 3)
+  ...spCapitalPosts, // Sprint 3: 8 posts de SP Capital
   // Futuros posts de zonas virão aqui (Sprint 4-5)
   // Futuros posts de bairros virão aqui (Sprint 6+)
 ]
