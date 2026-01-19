@@ -15,9 +15,9 @@ export const STATS = {
 }
 
 export const NAV_LINKS = [
-  { href: '#solucoes', label: 'Soluções' },
-  { href: '#como-funciona', label: 'Como Funciona' },
-  { href: '#faq', label: 'FAQ' },
+  { href: '/#solucoes', label: 'Soluções' },
+  { href: '/#como-funciona', label: 'Como Funciona' },
+  { href: '/#faq', label: 'FAQ' },
   { href: '/blog', label: 'Blog' },
 ]
 

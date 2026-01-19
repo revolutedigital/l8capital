@@ -133,7 +133,7 @@ export function Services() {
                   </div>
 
                   <div className="mt-10 text-center">
-                    <Link href="#contato">
+                    <Link href="/#contato">
                       <Button variant="ghost" className="group">
                         Quero saber mais sobre {tabLabels[category as keyof typeof tabLabels]?.toLowerCase() || category}
                         <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

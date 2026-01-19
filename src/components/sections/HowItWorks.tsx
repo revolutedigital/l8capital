@@ -121,7 +121,7 @@ export function HowItWorks() {
               Agende uma conversa gratuita e descubra quanto sua imobiliária pode economizar
             </p>
 
-            <Link href="#contato">
+            <Link href="/#contato">
               <Button variant="accent" size="lg" className="mb-6">
                 Agendar Minha Conversa Gratuita
               </Button>

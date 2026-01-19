@@ -75,7 +75,7 @@ export function Validation() {
               </p>
             </div>
 
-            <Link href="#contato">
+            <Link href="/#contato">
               <Button size="lg" className="w-full sm:w-auto">
                 Quero ser um dos primeiros em SP
               </Button>

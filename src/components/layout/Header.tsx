@@ -134,7 +134,7 @@ export function Header() {
                 WhatsApp
               </Button>
             </Link>
-            <Link href="#contato">
+            <Link href="/#contato">
               <Button variant="accent" size="sm" rightIcon={<ChevronRight className="h-4 w-4" />}>
                 Agendar Reunião
               </Button>

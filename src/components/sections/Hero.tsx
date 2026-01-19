@@ -84,7 +84,7 @@ export function Hero() {
             </motion.p>
 
             <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Link href="#contato">
+              <Link href="/#contato">
                 <Button
                   variant="accent"
                   size="lg"
@@ -93,7 +93,7 @@ export function Hero() {
                   Agendar Reunião Gratuita
                 </Button>
               </Link>
-              <Link href="#como-funciona">
+              <Link href="/#como-funciona">
                 <Button variant="secondary" size="lg" rightIcon={<ChevronDown className="h-5 w-5" />}>
                   Ver como funciona
                 </Button>
@@ -173,7 +173,7 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        <Link href="#problemas" className="flex flex-col items-center gap-3 group">
+        <Link href="/#problemas" className="flex flex-col items-center gap-3 group">
           <span className="text-xs font-semibold tracking-widest uppercase text-gray-400">
             Explore
           </span>

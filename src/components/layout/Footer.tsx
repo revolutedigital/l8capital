@@ -203,7 +203,7 @@ export function Footer() {
             <div className="mt-6 p-4 rounded-xl bg-gradient-to-r from-primary-600/20 to-secondary-600/20 border border-white/10">
               <p className="text-sm text-gray-300 mb-2">Pronto para começar?</p>
               <Link
-                href="#contato"
+                href="/#contato"
                 className="text-accent-400 font-semibold text-sm hover:text-accent-300 transition-colors inline-flex items-center gap-1"
               >
                 Agendar Conversa Gratuita
