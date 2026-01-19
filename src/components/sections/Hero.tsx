@@ -87,14 +87,15 @@ export function Hero() {
               <Link href="/#contato">
                 <Button
                   variant="accent"
-                  size="lg"
+                  size="md"
                   rightIcon={<ArrowRight className="h-5 w-5" />}
+                  className="whitespace-nowrap"
                 >
                   Agendar Reunião Gratuita
                 </Button>
               </Link>
               <Link href="/#como-funciona">
-                <Button variant="secondary" size="lg" rightIcon={<ChevronDown className="h-5 w-5" />}>
+                <Button variant="secondary" size="md" rightIcon={<ChevronDown className="h-5 w-5" />} className="whitespace-nowrap">
                   Ver como funciona
                 </Button>
               </Link>
