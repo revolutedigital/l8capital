@@ -116,7 +116,7 @@ export function Preloader({ onComplete, minDuration = 2000 }: PreloaderProps) {
               transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
             >
               <img
-                src="/images/logos/l8-logo-v2.png"
+                src="/images/logos/l8-logo-v2.webp"
                 alt="L8 Capital"
                 className="w-full h-full object-contain"
               />

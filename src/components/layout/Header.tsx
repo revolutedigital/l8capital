@@ -88,13 +88,13 @@ export function Header() {
             <div className="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
               {/* Light mode logo */}
               <img
-                src="/images/logos/l8-logo_transp_preto.png"
+                src="/images/logos/l8-logo_transp_preto.webp"
                 alt="L8 Capital - Soluções Financeiras para Imobiliárias"
                 className="w-full h-full object-contain transition-transform group-hover:scale-105 dark:hidden"
               />
               {/* Dark mode logo */}
               <img
-                src="/images/logos/l8-logo_transp_branco.png"
+                src="/images/logos/l8-logo_transp_branco.webp"
                 alt="L8 Capital - Soluções Financeiras para Imobiliárias"
                 className="w-full h-full object-contain transition-transform group-hover:scale-105 hidden dark:block"
               />

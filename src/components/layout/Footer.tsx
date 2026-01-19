@@ -77,7 +77,7 @@ export function Footer() {
               <div className="relative w-12 h-12 flex items-center justify-center">
                 {/* Always use white logo in footer (dark background) */}
                 <img
-                  src="/images/logos/l8-logo_transp_branco.png"
+                  src="/images/logos/l8-logo_transp_branco.webp"
                   alt="L8 Capital - Soluções Financeiras para Imobiliárias"
                   className="w-full h-full object-contain transition-transform group-hover:scale-105"
                 />
