@@ -63,10 +63,16 @@ export function CredibilityBar() {
   return (
     <section className="relative py-16 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-600 via-primary-700 to-primary-800" />
-      <div className="absolute inset-0 opacity-10" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")`,
-      }} />
+      <div className="absolute inset-0 bg-primary-700" />
+      <div
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: `url("/images/logos/bg_numeros_01.webp")`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
 
       <div className="container-custom relative z-10">
         {/* Stats Grid */}
@@ -78,16 +84,16 @@ export function CredibilityBar() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : index * 0.1 }}
-              className="text-center"
+              className="text-center relative"
             >
-              <div className="relative inline-block">
+              <div className="absolute inset-0 bg-white/5 rounded-2xl" />
+              <div className="relative py-4">
                 <div className="text-4xl md:text-5xl font-bold text-white mb-2">
                   <AnimatedNumber value={stat.number} prefix={stat.prefix} suffix={stat.suffix} />
                 </div>
-                <div className="absolute -inset-4 bg-white/5 rounded-2xl -z-10" />
+                <p className="text-white font-semibold text-lg">{stat.label}</p>
+                <p className="text-primary-200 text-sm">{stat.sublabel}</p>
               </div>
-              <p className="text-white font-semibold text-lg">{stat.label}</p>
-              <p className="text-primary-200 text-sm">{stat.sublabel}</p>
             </motion.div>
           ))}
         </div>
@@ -105,30 +111,30 @@ export function CredibilityBar() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : 0.4 }}
-          className="flex flex-wrap justify-center items-center gap-8 md:gap-16"
+          className="flex flex-wrap justify-center items-center gap-4 md:gap-6"
         >
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="relative h-12 w-32 md:h-16 md:w-40 grayscale brightness-200 opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="relative h-20 w-44 md:h-24 md:w-52 grayscale brightness-200 opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
             >
               <Image
                 src={partner.logo}
                 alt={partner.name}
                 fill
-                sizes="(max-width: 768px) 128px, 160px"
+                sizes="(max-width: 768px) 176px, 208px"
                 className="object-contain"
               />
             </div>
           ))}
 
           {/* L8 Logo */}
-          <div className="relative h-12 w-32 md:h-16 md:w-40">
+          <div className="relative h-20 w-44 md:h-24 md:w-52">
             <Image
               src="/images/logos/l8-logo.png"
               alt="L8 Capital"
               fill
-              sizes="(max-width: 768px) 128px, 160px"
+              sizes="(max-width: 768px) 176px, 208px"
               className="object-contain"
             />
           </div>
