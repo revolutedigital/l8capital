@@ -131,12 +131,12 @@ export function Hero() {
               </div>
             </TiltCard>
 
-            {/* Stats card */}
+            {/* Stats card - Hidden on smaller screens to prevent overlap */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.25, delay: 0.4 }}
-              className="absolute -bottom-6 right-0 lg:-right-6"
+              className="hidden xl:block absolute -bottom-6 right-4"
             >
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-5 border border-gray-100 dark:border-gray-700">
                 <div className="flex items-center gap-4">
