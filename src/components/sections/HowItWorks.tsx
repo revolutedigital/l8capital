@@ -16,9 +16,9 @@ const iconMap: Record<string, React.ElementType> = {
 }
 
 const stepColors = [
-  { bg: 'from-primary-500 to-primary-600', light: 'bg-primary-100 dark:bg-primary-900/30', text: 'text-primary-600' },
-  { bg: 'from-secondary-500 to-secondary-600', light: 'bg-secondary-100 dark:bg-secondary-900/30', text: 'text-secondary-600' },
-  { bg: 'from-accent-500 to-accent-600', light: 'bg-accent-100 dark:bg-accent-900/30', text: 'text-accent-600' },
+  { bg: 'from-primary-800 to-primary-900', light: 'bg-primary-100 dark:bg-primary-800/30', text: 'text-primary-900 dark:text-primary-100' },
+  { bg: 'from-secondary-500 to-secondary-600', light: 'bg-secondary-100 dark:bg-secondary-800/30', text: 'text-secondary-700 dark:text-secondary-200' },
+  { bg: 'from-accent-400 to-accent-500', light: 'bg-accent-100 dark:bg-accent-900/30', text: 'text-accent-600 dark:text-accent-400' },
 ]
 
 export function HowItWorks() {
@@ -48,7 +48,7 @@ export function HowItWorks() {
         {/* Steps Timeline */}
         <div className="relative max-w-5xl mx-auto mb-16">
           {/* Connection line - Desktop */}
-          <div className="hidden lg:block absolute top-32 left-[16.666%] right-[16.666%] h-1 bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 rounded-full" />
+          <div className="hidden lg:block absolute top-32 left-[16.666%] right-[16.666%] h-1 bg-gradient-to-r from-primary-700 via-secondary-500 to-accent-500 rounded-full" />
 
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             {STEPS.map((step, index) => {

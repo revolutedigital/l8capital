@@ -10,47 +10,47 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // PRIMARY - Azul Profundo (Confiança, Tecnologia)
+        // PRIMARY - Preto Premium (Elegância, Sofisticação)
         primary: {
-          50: '#E6EEF5',
-          100: '#C2D6E8',
-          200: '#9ABCDA',
-          300: '#72A2CC',
-          400: '#538DC1',
-          500: '#3479B6',
-          600: '#0F4C81', // BASE
-          700: '#0D4070',
-          800: '#0A3558', // DARK
-          900: '#072540',
-          950: '#041626',
+          50: '#F5F5F5',
+          100: '#E8E8E8',
+          200: '#D1D1D1',
+          300: '#B0B0B0',
+          400: '#888888',
+          500: '#6A6A6A',
+          600: '#4A4A4A',
+          700: '#2D2D2D',
+          800: '#1A1A1A',
+          900: '#0A0A0A', // BASE
+          950: '#050505',
         },
-        // SECONDARY - Verde Sucesso (Crescimento, Resultado)
+        // SECONDARY - Cinza Warm (Suporte, Neutralidade Elegante)
         secondary: {
-          50: '#E8F5EE',
-          100: '#C7E8D5',
-          200: '#A3DABB',
-          300: '#7FCCA0',
-          400: '#64C18B',
-          500: '#48B676',
-          600: '#2E8B57', // BASE
-          700: '#277549',
-          800: '#1F5F3B',
-          900: '#18492E',
-          950: '#0F2E1D',
+          50: '#FAFAF8',
+          100: '#F5F5F3',
+          200: '#E8E8E4',
+          300: '#D4D4CE',
+          400: '#A8A8A0',
+          500: '#7A7A72',
+          600: '#5C5C56', // BASE
+          700: '#4A4A45',
+          800: '#3A3A36',
+          900: '#2A2A27',
+          950: '#1A1A18',
         },
-        // ACCENT - Dourado (CTAs, Destaques)
+        // ACCENT - Dourado Premium (CTAs, Exclusividade)
         accent: {
-          50: '#FEF7E6',
-          100: '#FDECC2',
-          200: '#FBDF99',
-          300: '#F9D170',
-          400: '#F7C34A',
-          500: '#F5A623', // BASE
-          600: '#E09000',
-          700: '#B87600',
-          800: '#8F5C00',
-          900: '#664200',
-          950: '#3D2700',
+          50: '#FBF8F0',
+          100: '#F7F0DC',
+          200: '#EFE1B8',
+          300: '#E5CD8A',
+          400: '#D9B85C',
+          500: '#C9A227', // BASE - Dourado Premium
+          600: '#B8922A',
+          700: '#967720',
+          800: '#745C18',
+          900: '#524110',
+          950: '#302608',
         },
       },
       fontFamily: {
@@ -73,9 +73,10 @@ const config: Config = {
         'container-x': 'clamp(1rem, 5vw, 5rem)',
       },
       boxShadow: {
-        'primary': '0 4px 14px 0 rgba(15, 76, 129, 0.35)',
-        'primary-lg': '0 10px 25px -5px rgba(15, 76, 129, 0.4)',
-        'accent': '0 4px 14px 0 rgba(245, 166, 35, 0.35)',
+        'primary': '0 4px 14px 0 rgba(10, 10, 10, 0.25)',
+        'primary-lg': '0 10px 25px -5px rgba(10, 10, 10, 0.3)',
+        'accent': '0 4px 14px 0 rgba(201, 162, 39, 0.4)',
+        'accent-lg': '0 10px 25px -5px rgba(201, 162, 39, 0.45)',
       },
       borderRadius: {
         'xl': '1rem',

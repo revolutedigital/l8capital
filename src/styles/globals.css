@@ -9,49 +9,54 @@
 
 @layer base {
   :root {
-    /* Background & Surface */
+    /* Background & Surface - Clean White */
     --bg-primary: #FFFFFF;
-    --bg-secondary: #FAFBFC;
-    --bg-tertiary: #F3F4F6;
-    --bg-inverse: #111827;
+    --bg-secondary: #FAFAF8;
+    --bg-tertiary: #F5F5F3;
+    --bg-inverse: #0A0A0A;
 
     --surface-card: #FFFFFF;
     --surface-elevated: #FFFFFF;
-    --surface-overlay: rgba(0, 0, 0, 0.5);
+    --surface-overlay: rgba(10, 10, 10, 0.6);
 
-    /* Text */
-    --text-primary: #111827;
-    --text-secondary: #4B5563;
-    --text-tertiary: #6B7280;
-    --text-disabled: #9CA3AF;
+    /* Text - Premium Black */
+    --text-primary: #0A0A0A;
+    --text-secondary: #4A4A4A;
+    --text-tertiary: #7A7A72;
+    --text-disabled: #A8A8A0;
     --text-inverse: #FFFFFF;
 
-    /* Border */
-    --border-light: #E5E7EB;
-    --border-medium: #D1D5DB;
-    --border-dark: #9CA3AF;
+    /* Border - Warm Neutrals */
+    --border-light: #E8E8E4;
+    --border-medium: #D4D4CE;
+    --border-dark: #A8A8A0;
+
+    /* Accent - Gold */
+    --accent-gold: #C9A227;
+    --accent-gold-light: #D9B85C;
+    --accent-gold-dark: #B8922A;
 
     /* Focus Ring */
     --ring-offset: 2px;
     --ring-width: 2px;
-    --ring-color: #3479B6;
+    --ring-color: #C9A227;
   }
 
-  /* Dark Mode */
+  /* Dark Mode - Premium Black */
   .dark {
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --bg-tertiary: #334155;
+    --bg-primary: #0A0A0A;
+    --bg-secondary: #1A1A1A;
+    --bg-tertiary: #2D2D2D;
 
-    --surface-card: #1e293b;
-    --surface-elevated: #334155;
+    --surface-card: #1A1A1A;
+    --surface-elevated: #2D2D2D;
 
-    --text-primary: #f8fafc;
-    --text-secondary: #e2e8f0;
-    --text-tertiary: #94a3b8;
+    --text-primary: #FAFAF8;
+    --text-secondary: #E8E8E4;
+    --text-tertiary: #A8A8A0;
 
-    --border-light: #334155;
-    --border-medium: #475569;
+    --border-light: #2D2D2D;
+    --border-medium: #4A4A4A;
   }
 
   html {
@@ -80,7 +85,7 @@
 
   /* Selection */
   ::selection {
-    @apply bg-primary-600 text-white;
+    @apply bg-accent-500 text-primary-900;
   }
 
   /* Smooth scrollbar */
@@ -197,15 +202,15 @@
      ============================================ */
 
   .gradient-text-primary {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-900 to-primary-700;
   }
 
   .gradient-text-secondary {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary-500 to-secondary-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary-600 to-secondary-500;
   }
 
   .gradient-text-accent {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-500 to-accent-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-600;
   }
 
   /* ============================================
@@ -331,15 +336,15 @@
   }
 
   .blob-primary {
-    @apply blob bg-primary-500;
+    @apply blob bg-primary-400;
   }
 
   .blob-secondary {
-    @apply blob bg-secondary-500;
+    @apply blob bg-secondary-400;
   }
 
   .blob-accent {
-    @apply blob bg-accent-500;
+    @apply blob bg-accent-400;
   }
 
   /* Grid pattern background */
@@ -375,20 +380,20 @@
 
   /* Gradient backgrounds */
   .gradient-primary {
-    @apply bg-gradient-to-br from-primary-600 to-primary-800;
+    @apply bg-gradient-to-br from-primary-800 to-primary-950;
   }
 
   .gradient-hero {
-    @apply bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800;
+    @apply bg-gradient-to-b from-secondary-50 to-white dark:from-primary-950 dark:to-primary-900;
   }
 
   .gradient-section {
-    @apply bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900;
+    @apply bg-gradient-to-br from-primary-900 via-primary-950 to-black;
   }
 
   /* Text gradient */
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-600;
   }
 
   /* Hover lift effect */
@@ -398,15 +403,15 @@
 
   /* Shadow utilities */
   .shadow-glow-primary {
-    box-shadow: 0 0 40px rgba(15, 76, 129, 0.3);
+    box-shadow: 0 0 40px rgba(10, 10, 10, 0.2);
   }
 
   .shadow-glow-secondary {
-    box-shadow: 0 0 40px rgba(46, 139, 87, 0.3);
+    box-shadow: 0 0 40px rgba(74, 74, 74, 0.2);
   }
 
   .shadow-glow-accent {
-    box-shadow: 0 0 40px rgba(245, 166, 35, 0.3);
+    box-shadow: 0 0 40px rgba(201, 162, 39, 0.4);
   }
 
   /* Border gradient */

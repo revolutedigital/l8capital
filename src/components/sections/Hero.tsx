@@ -107,9 +107,9 @@ export function Hero() {
                 { text: 'Análise gratuita', icon: Shield },
                 { text: 'Resultados em 30 dias', icon: Zap },
               ].map((i) => (
-                <div key={i.text} className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
-                  <div className="w-8 h-8 rounded-xl bg-secondary-100 dark:bg-secondary-900/30 flex items-center justify-center">
-                    <i.icon className="h-4 w-4 text-secondary-600 dark:text-secondary-400" />
+                <div key={i.text} className="flex items-center gap-3 text-secondary-600 dark:text-secondary-300">
+                  <div className="w-8 h-8 rounded-xl bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center">
+                    <i.icon className="h-4 w-4 text-accent-600 dark:text-accent-400" />
                   </div>
                   <span className="text-sm font-medium">{i.text}</span>
                 </div>
@@ -125,8 +125,8 @@ export function Hero() {
             className="relative lg:pl-8"
           >
             <TiltCard maxTilt={5} className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-primary-500/15 via-secondary-500/10 to-accent-500/15 rounded-[2rem] blur-2xl" />
-              <div className="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-gray-200/50 dark:border-gray-700/50">
+              <div className="absolute -inset-4 bg-gradient-to-br from-primary-400/10 via-accent-400/15 to-secondary-400/10 rounded-[2rem] blur-2xl" />
+              <div className="relative bg-white/90 dark:bg-primary-900/90 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-secondary-200/50 dark:border-primary-700/50">
                 <IllustrationHero className="w-full h-auto" />
               </div>
             </TiltCard>
@@ -138,14 +138,14 @@ export function Hero() {
               transition={{ duration: 0.25, delay: 0.4 }}
               className="hidden xl:block absolute -bottom-6 right-4"
             >
-              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-5 border border-gray-100 dark:border-gray-700">
+              <div className="bg-white dark:bg-primary-800 rounded-2xl shadow-xl p-5 border border-secondary-200 dark:border-primary-700">
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-secondary-400 to-secondary-600 rounded-xl flex items-center justify-center shadow-lg">
-                    <span className="text-white text-xl font-bold">{STATS.agencies}</span>
+                  <div className="w-14 h-14 bg-gradient-to-br from-accent-400 to-accent-500 rounded-xl flex items-center justify-center shadow-lg">
+                    <span className="text-primary-900 text-xl font-bold">{STATS.agencies}</span>
                   </div>
                   <div>
-                    <p className="font-bold text-gray-900 dark:text-white">Imobiliárias</p>
-                    <p className="text-sm text-gray-500">já usam a solução</p>
+                    <p className="font-bold text-primary-900 dark:text-white">Imobiliárias</p>
+                    <p className="text-sm text-secondary-500">já usam a solução</p>
                   </div>
                 </div>
               </div>
@@ -158,12 +158,12 @@ export function Hero() {
               transition={{ duration: 0.25, delay: 0.5 }}
               className="absolute -top-6 -right-6 lg:-right-12"
             >
-              <div className="bg-gradient-to-br from-primary-500 to-primary-700 text-white rounded-2xl shadow-xl p-5">
+              <div className="bg-gradient-to-br from-primary-800 to-primary-900 text-white rounded-2xl shadow-xl p-5">
                 <div className="flex items-center gap-3">
-                  <Shield className="w-9 h-9" />
+                  <Shield className="w-9 h-9 text-accent-400" />
                   <div>
                     <p className="font-bold text-xl">{STATS.experience} anos</p>
-                    <p className="text-xs text-primary-200">de experiência</p>
+                    <p className="text-xs text-secondary-300">de experiência</p>
                   </div>
                 </div>
               </div>

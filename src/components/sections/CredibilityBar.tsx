@@ -62,10 +62,10 @@ export function CredibilityBar() {
 
   return (
     <section className="relative py-16 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-primary-700" />
+      {/* Background - Premium Black */}
+      <div className="absolute inset-0 bg-primary-900" />
       <div
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-20"
         style={{
           backgroundImage: `url("/images/logos/bg_numeros_01.webp")`,
           backgroundSize: 'cover',
@@ -88,11 +88,11 @@ export function CredibilityBar() {
             >
               <div className="absolute inset-0 bg-white/5 rounded-2xl" />
               <div className="relative py-4">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-accent-400 mb-2">
                   <AnimatedNumber value={stat.number} prefix={stat.prefix} suffix={stat.suffix} />
                 </div>
                 <p className="text-white font-semibold text-lg">{stat.label}</p>
-                <p className="text-primary-200 text-sm">{stat.sublabel}</p>
+                <p className="text-secondary-300 text-sm">{stat.sublabel}</p>
               </div>
             </motion.div>
           ))}
@@ -100,9 +100,9 @@ export function CredibilityBar() {
 
         {/* Divider */}
         <div className="flex items-center gap-4 mb-10">
-          <div className="flex-1 h-px bg-white/20" />
-          <span className="text-primary-200 text-sm font-medium uppercase tracking-wider">Nossos Parceiros</span>
-          <div className="flex-1 h-px bg-white/20" />
+          <div className="flex-1 h-px bg-accent-500/30" />
+          <span className="text-accent-400 text-sm font-medium uppercase tracking-wider">Nossos Parceiros</span>
+          <div className="flex-1 h-px bg-accent-500/30" />
         </div>
 
         {/* Partners */}
@@ -146,7 +146,7 @@ export function CredibilityBar() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : 0.5 }}
-          className="text-center text-primary-100 mt-10 text-lg"
+          className="text-center text-secondary-300 mt-10 text-lg"
         >
           Solução validada em <span className="font-semibold text-white">+400 imobiliárias</span> no Centro-Oeste.{' '}
           <span className="text-accent-400 font-semibold">Agora chegando a São Paulo.</span>

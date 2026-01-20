@@ -37,31 +37,31 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variants = {
       primary: `
-        bg-primary-600 text-white
-        shadow-lg shadow-primary-600/25
-        hover:bg-primary-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary-600/30
-        active:bg-primary-800 active:translate-y-0 active:shadow-md
-        focus-visible:ring-primary-500
+        bg-primary-900 text-white
+        shadow-lg shadow-primary-900/25
+        hover:bg-primary-800 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary-900/30
+        active:bg-primary-950 active:translate-y-0 active:shadow-md
+        focus-visible:ring-accent-500
       `,
       accent: `
-        bg-gradient-to-r from-accent-500 to-accent-600 text-gray-900
-        shadow-lg shadow-accent-500/30
-        hover:from-accent-400 hover:to-accent-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent-500/40
-        active:from-accent-600 active:to-accent-700 active:translate-y-0
-        focus-visible:ring-accent-500
+        bg-gradient-to-r from-accent-400 to-accent-500 text-primary-900
+        shadow-lg shadow-accent-500/35
+        hover:from-accent-300 hover:to-accent-400 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent-500/45
+        active:from-accent-500 active:to-accent-600 active:translate-y-0
+        focus-visible:ring-accent-600
         font-bold
       `,
       secondary: `
-        bg-transparent text-primary-600 dark:text-primary-400
-        border-2 border-primary-600 dark:border-primary-400
-        hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:border-primary-700 hover:-translate-y-0.5
-        active:bg-primary-100 dark:active:bg-primary-900/50
-        focus-visible:ring-primary-500
+        bg-transparent text-primary-900 dark:text-white
+        border-2 border-primary-900 dark:border-white
+        hover:bg-primary-50 dark:hover:bg-white/10 hover:border-primary-700 hover:-translate-y-0.5
+        active:bg-primary-100 dark:active:bg-white/20
+        focus-visible:ring-accent-500
       `,
       ghost: `
-        bg-transparent text-primary-600 dark:text-primary-400
-        hover:bg-primary-50 dark:hover:bg-primary-900/30
-        focus-visible:ring-primary-500
+        bg-transparent text-primary-900 dark:text-white
+        hover:bg-primary-50 dark:hover:bg-white/10
+        focus-visible:ring-accent-500
       `,
       whatsapp: `
         bg-[#25D366] text-white
