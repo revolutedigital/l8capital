@@ -9,21 +9,14 @@ import { useReducedMotion } from '@/hooks'
 import { MeshGradient, MeshGradientFallback, TiltCard } from '@/components/animations'
 import { IllustrationHero } from '@/components/illustrations'
 
-// Fast animation config
+// Fast animation config - only for non-LCP elements
 const fast = { duration: 0.2, ease: [0.4, 0, 0.2, 1] }
 
 export function Hero() {
   const prefersReducedMotion = useReducedMotion()
 
-  const container = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.08, delayChildren: 0.1 }
-    }
-  }
-
-  const item = {
+  // Animation only for secondary elements (not h1 - LCP element)
+  const fadeIn = {
     hidden: { opacity: 0, y: 12 },
     visible: { opacity: 1, y: 0, transition: fast }
   }
@@ -55,20 +48,21 @@ export function Hero() {
       <div className="container-custom relative z-10 py-24 md:py-32 lg:py-40">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
-          <motion.div
-            variants={container}
-            initial="hidden"
-            animate="visible"
-            className="max-w-2xl"
-          >
-            <motion.div variants={item} className="mb-8">
+          <div className="max-w-2xl">
+            <motion.div
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...fast, delay: 0.1 }}
+              className="mb-8"
+            >
               <Badge variant="highlight" className="inline-flex items-center gap-2 px-4 py-2">
-                <Zap className="w-4 h-4 text-accent-500" />
+                <Zap className="w-4 h-4 text-accent-100" aria-hidden="true" />
                 <span className="font-semibold">Novo em São Paulo</span>
               </Badge>
             </motion.div>
 
-            <motion.h1 variants={item} className="heading-1 text-primary-900 dark:text-white mb-6">
+            {/* H1 - LCP element - NO animation to improve LCP score */}
+            <h1 className="heading-1 text-primary-900 dark:text-white mb-6">
               Imobiliárias parceiras economizam{' '}
               <span className="relative inline-block">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
@@ -77,13 +71,23 @@ export function Hero() {
                 <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-accent-500 to-secondary-500 rounded-full" />
               </span>{' '}
               /mês em boletos.
-            </motion.h1>
+            </h1>
 
-            <motion.p variants={item} className="body-large text-secondary-600 dark:text-secondary-300 mb-10 max-w-xl">
+            <motion.p
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...fast, delay: 0.15 }}
+              className="body-large text-secondary-600 dark:text-secondary-300 mb-10 max-w-xl"
+            >
               {`Tecnologia própria + ${STATS.experience} anos de experiência em seguros = mais dinheiro no seu caixa e menos trabalho operacional.`}
             </motion.p>
 
-            <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 mb-12">
+            <motion.div
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...fast, delay: 0.2 }}
+              className="flex flex-col sm:flex-row gap-4 mb-12"
+            >
               <Link href="/#contato">
                 <Button
                   variant="accent"
@@ -101,7 +105,12 @@ export function Hero() {
               </Link>
             </motion.div>
 
-            <motion.div variants={item} className="flex flex-wrap gap-x-8 gap-y-4">
+            <motion.div
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...fast, delay: 0.25 }}
+              className="flex flex-wrap gap-x-8 gap-y-4"
+            >
               {[
                 { text: 'Sem mensalidade fixa', icon: Check },
                 { text: 'Análise gratuita', icon: Shield },
@@ -109,13 +118,13 @@ export function Hero() {
               ].map((i) => (
                 <div key={i.text} className="flex items-center gap-3 text-secondary-600 dark:text-secondary-300">
                   <div className="w-8 h-8 rounded-xl bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center">
-                    <i.icon className="h-4 w-4 text-accent-600 dark:text-accent-400" />
+                    <i.icon className="h-4 w-4 text-accent-600 dark:text-accent-400" aria-hidden="true" />
                   </div>
                   <span className="text-sm font-medium">{i.text}</span>
                 </div>
               ))}
             </motion.div>
-          </motion.div>
+          </div>
 
           {/* Illustration */}
           <motion.div
