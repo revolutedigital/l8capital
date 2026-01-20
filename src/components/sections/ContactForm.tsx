@@ -204,21 +204,23 @@ export function ContactForm() {
                 'Números reais, não promessas genéricas',
                 '30 minutos que podem mudar seu mês',
               ].map((item, index) => (
-                <FadeInOnScroll key={item} delay={0.7 + index * 0.1} direction="left">
-                  <motion.li
-                    className="flex items-center gap-4"
-                    whileHover={{ x: 5 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
+                <motion.li
+                  key={item}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.7 + index * 0.1, type: 'spring', stiffness: 300 }}
+                  whileHover={{ x: 5 }}
+                  className="flex items-center gap-4"
+                >
+                  <motion.div
+                    className="flex-shrink-0 w-8 h-8 rounded-xl bg-secondary-500/30 flex items-center justify-center"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
                   >
-                    <motion.div
-                      className="flex-shrink-0 w-8 h-8 rounded-xl bg-secondary-500/30 flex items-center justify-center"
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                    >
-                      <Check className="h-5 w-5 text-secondary-400" />
-                    </motion.div>
-                    <span className="text-white text-lg">{item}</span>
-                  </motion.li>
-                </FadeInOnScroll>
+                    <Check className="h-5 w-5 text-secondary-400" aria-hidden="true" />
+                  </motion.div>
+                  <span className="text-white text-lg">{item}</span>
+                </motion.li>
               ))}
             </ul>
 

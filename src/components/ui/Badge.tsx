@@ -14,7 +14,7 @@ const Badge = forwardRef<HTMLSpanElement, BadgeProps>(
       success: 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-200',
       warning: 'bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-200',
       info: 'bg-secondary-100 text-secondary-700 dark:bg-secondary-800/50 dark:text-secondary-200',
-      highlight: 'bg-accent-100 text-accent-700 dark:bg-accent-900/50 dark:text-accent-300',
+      highlight: 'bg-accent-900 text-accent-100 dark:bg-accent-800 dark:text-accent-100',
     }
 
     return (

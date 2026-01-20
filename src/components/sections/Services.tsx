@@ -117,9 +117,9 @@ export function Services() {
                             </div>
 
                             {/* Content */}
-                            <h4 className="text-lg font-bold text-primary-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-accent-400 transition-colors">
+                            <h3 className="text-lg font-bold text-primary-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-accent-400 transition-colors">
                               {service.title}
-                            </h4>
+                            </h3>
                             <p className="text-secondary-600 dark:text-secondary-400 text-sm leading-relaxed">
                               {service.description}
                             </p>
