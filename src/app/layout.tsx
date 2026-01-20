@@ -108,6 +108,73 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body">
+        {/* Instant Preloader - CSS only, no JS needed, appears immediately */}
+        <div
+          id="instant-preloader"
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 99999,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'linear-gradient(to bottom right, #1A1A1A, #0A0A0A)',
+            transition: 'opacity 0.3s ease-out',
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logos/l8-logo_transp_branco-sm.webp"
+            alt="L8 Capital"
+            width={128}
+            height={128}
+            fetchPriority="high"
+            style={{ width: 96, height: 96, objectFit: 'contain', marginBottom: 24 }}
+          />
+          <p style={{ color: '#fff', fontSize: 20, fontWeight: 700, marginBottom: 4 }}>L8 Capital</p>
+          <p style={{ color: '#A8A8A0', fontSize: 14 }}>Sua imobiliária mais forte</p>
+          <div style={{ width: 160, height: 4, background: '#2D2D2D', borderRadius: 2, marginTop: 24, overflow: 'hidden' }}>
+            <div
+              style={{
+                width: '100%',
+                height: '100%',
+                background: '#C9A227',
+                borderRadius: 2,
+                animation: 'preloader-progress 0.8s ease-out forwards',
+              }}
+            />
+          </div>
+        </div>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              @keyframes preloader-progress {
+                from { width: 0%; }
+                to { width: 100%; }
+              }
+              .preloader-hidden {
+                opacity: 0 !important;
+                pointer-events: none !important;
+              }
+            `,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.addEventListener('load', function() {
+                setTimeout(function() {
+                  var p = document.getElementById('instant-preloader');
+                  if (p) {
+                    p.classList.add('preloader-hidden');
+                    setTimeout(function() { p.remove(); }, 300);
+                  }
+                }, 800);
+              });
+            `,
+          }}
+        />
         <GoogleAnalytics />
         <WebVitals />
         <ScrollToAnchor />

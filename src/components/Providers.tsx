@@ -13,7 +13,7 @@ export function Providers({ children }: ProvidersProps) {
     <ErrorBoundary>
       {/* Global animation components */}
       <GlobalAnimations
-        enablePreloader={true}
+        enablePreloader={false}
         enableCursor={false}
         enableScrollProgress={true}
       />
