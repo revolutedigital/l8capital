@@ -115,9 +115,12 @@ export function Preloader({ onComplete, minDuration = 2000 }: PreloaderProps) {
               }}
               transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
             >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/logos/l8-logo_transp_branco.webp"
                 alt="L8 Capital"
+                width={160}
+                height={160}
                 className="w-full h-full object-contain"
               />
             </motion.div>

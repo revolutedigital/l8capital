@@ -1,0 +1,15 @@
+# Navegadores modernos que suportam ES6+ nativamente
+# Isso remove polyfills desnecessários como Array.prototype.at, flat, flatMap, etc.
+
+# Últimas 2 versões dos principais navegadores
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Safari versions
+last 2 Edge versions
+
+# Não suportar IE
+not IE 11
+not dead
+
+# Navegadores com mais de 0.5% de uso global e que suportam ES6
+>0.5% and supports es6-module
