@@ -131,7 +131,7 @@ export function CredibilityBar() {
           {/* L8 Logo */}
           <div className="relative h-20 w-44 md:h-24 md:w-52">
             <Image
-              src="/images/logos/l8-logo.webp"
+              src="/images/logos/l8-logo_transp_branco-sm.webp"
               alt="L8 Capital"
               fill
               sizes="(max-width: 768px) 176px, 208px"

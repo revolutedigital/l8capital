@@ -86,6 +86,8 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+        {/* Preload critical logo for instant preloader */}
+        <link rel="preload" href="/images/logos/l8-logo_transp_branco-sm.webp" as="image" type="image/webp" />
         {/* Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
