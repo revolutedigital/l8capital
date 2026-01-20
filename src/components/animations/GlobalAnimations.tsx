@@ -27,10 +27,10 @@ export function GlobalAnimations({
 
   return (
     <>
-      {/* Preloader */}
+      {/* Preloader - optimized with shorter duration */}
       {enablePreloader && !isLoaded && (
         <Preloader
-          minDuration={2500}
+          minDuration={800}
           onComplete={() => setIsLoaded(true)}
         />
       )}

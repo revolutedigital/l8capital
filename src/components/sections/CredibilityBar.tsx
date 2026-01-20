@@ -14,8 +14,8 @@ const stats = [
 ]
 
 const partners = [
-  { name: 'Parceiro 1', logo: '/images/logos/parceiro1.webp' },
-  { name: 'Parceiro 2', logo: '/images/logos/parceiro2.webp' },
+  { name: 'Parceiro 1', logo: '/images/logos/parceiro1-sm.webp' },
+  { name: 'Parceiro 2', logo: '/images/logos/parceiro2-sm.webp' },
 ]
 
 function AnimatedNumber({ value, prefix = '', suffix = '' }: { value: number; prefix?: string; suffix?: string }) {
