@@ -25,7 +25,7 @@ export function HowItWorks() {
   const prefersReducedMotion = useReducedMotion()
 
   return (
-    <section id="como-funciona" className="section-padding bg-gray-50 dark:bg-gray-900/50">
+    <section id="como-funciona" className="section-padding bg-secondary-50 dark:bg-primary-900/50">
       <div className="container-custom">
         <motion.div
           initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
@@ -37,10 +37,10 @@ export function HowItWorks() {
           <span className="inline-block text-sm font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wider mb-4">
             Como Começar
           </span>
-          <h2 className="heading-2 text-gray-900 dark:text-white mb-4">
+          <h2 className="heading-2 text-primary-900 dark:text-white mb-4">
             Três passos para começar
           </h2>
-          <p className="body-large text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="body-large text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
             Processo simples e sem burocracia para sua imobiliária crescer
           </p>
         </motion.div>
@@ -66,7 +66,7 @@ export function HowItWorks() {
                 >
                   {/* Step Number Background */}
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-4 z-0">
-                    <span className="text-[120px] font-bold text-gray-100 dark:text-gray-800 select-none">
+                    <span className="text-[120px] font-bold text-secondary-100 dark:text-primary-800 select-none">
                       {step.number}
                     </span>
                   </div>
@@ -78,17 +78,17 @@ export function HowItWorks() {
                         <Icon size={48} />
                       </div>
                       {/* Step number badge */}
-                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-white dark:bg-gray-900 rounded-full flex items-center justify-center shadow-lg border-2 border-gray-100 dark:border-gray-700">
+                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-white dark:bg-primary-900 rounded-full flex items-center justify-center shadow-lg border-2 border-secondary-100 dark:border-primary-700">
                         <span className={`text-sm font-bold ${colors.text}`}>{step.number}</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 relative z-10" style={{ paddingTop: '25px' }}>
+                  <h3 className="text-xl font-bold text-primary-900 dark:text-white mb-3 relative z-10" style={{ paddingTop: '25px' }}>
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 relative z-10 max-w-xs mx-auto">
+                  <p className="text-secondary-600 dark:text-secondary-400 relative z-10 max-w-xs mx-auto">
                     {step.description}
                   </p>
 
@@ -113,11 +113,11 @@ export function HowItWorks() {
           transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : 0.4 }}
           className="text-center"
         >
-          <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 dark:border-gray-700 max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="bg-white dark:bg-primary-800 rounded-3xl p-8 md:p-12 shadow-xl border border-secondary-100 dark:border-primary-700 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-4">
               Pronto para começar?
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-8">
+            <p className="text-secondary-600 dark:text-secondary-400 mb-8">
               Agende uma conversa gratuita e descubra quanto sua imobiliária pode economizar
             </p>
 
@@ -133,7 +133,7 @@ export function HowItWorks() {
                 { icon: MapPin, text: 'Online ou presencial' },
                 { icon: Wallet, text: 'Sem custo' },
               ].map((item) => (
-                <div key={item.text} className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                <div key={item.text} className="flex items-center gap-2 text-secondary-600 dark:text-secondary-400">
                   <div className="w-6 h-6 rounded-full bg-secondary-100 dark:bg-secondary-900/30 flex items-center justify-center">
                     <item.icon className="h-3.5 w-3.5 text-secondary-600 dark:text-secondary-400" />
                   </div>

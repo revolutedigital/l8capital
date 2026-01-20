@@ -51,7 +51,7 @@ export function Footer() {
   const prefersReducedMotion = useReducedMotion()
 
   return (
-    <footer className="relative bg-gray-900 text-white overflow-hidden">
+    <footer className="relative bg-primary-900 text-white overflow-hidden" role="contentinfo" aria-label="Rodapé do site">
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-600/10 rounded-full blur-3xl" />
@@ -84,20 +84,20 @@ export function Footer() {
               </div>
               <div>
                 <span className="font-display font-bold text-xl text-white">
-                  Capital
+                  L8 Capital
                 </span>
-                <span className="block text-xs text-gray-400 -mt-0.5">
+                <span className="block text-xs text-secondary-400 -mt-0.5">
                   {SITE_CONFIG.tagline}
                 </span>
               </div>
             </Link>
 
-            <p className="text-gray-400 mb-6 max-w-xs">
+            <p className="text-secondary-400 mb-6 max-w-xs">
               Plataforma digital de soluções financeiras que fortalece imobiliárias há mais de 24 anos.
             </p>
 
-            <div className="flex items-center gap-2 text-gray-500 text-sm mb-6">
-              <MapPin className="w-4 h-4" />
+            <div className="flex items-center gap-2 text-secondary-500 text-sm mb-6">
+              <MapPin className="w-4 h-4" aria-hidden="true" />
               <span>São Paulo, SP - Brasil</span>
             </div>
 
@@ -108,8 +108,8 @@ export function Footer() {
                   key={badge.label}
                   className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/5 border border-white/10"
                 >
-                  <badge.icon className="w-4 h-4 text-secondary-400" />
-                  <span className="text-xs text-gray-400">{badge.label}</span>
+                  <badge.icon className="w-4 h-4 text-secondary-400" aria-hidden="true" />
+                  <span className="text-xs text-secondary-400">{badge.label}</span>
                 </div>
               ))}
             </div>
@@ -127,12 +127,12 @@ export function Footer() {
               <div className="w-1 h-4 bg-gradient-to-b from-primary-500 to-primary-600 rounded-full" />
               Soluções
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3" role="list">
               {footerLinks.solucoes.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-1 group"
+                    className="text-secondary-400 hover:text-white transition-colors inline-flex items-center gap-1 group"
                   >
                     {link.label}
                     <ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
@@ -154,12 +154,12 @@ export function Footer() {
               <div className="w-1 h-4 bg-gradient-to-b from-secondary-500 to-secondary-600 rounded-full" />
               Recursos
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3" role="list">
               {footerLinks.recursos.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-1 group"
+                    className="text-secondary-400 hover:text-white transition-colors inline-flex items-center gap-1 group"
                   >
                     {link.label}
                     <ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
@@ -181,14 +181,15 @@ export function Footer() {
               <div className="w-1 h-4 bg-gradient-to-b from-accent-500 to-accent-600 rounded-full" />
               Fale Conosco
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3" role="list">
               {footerLinks.contato.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
                     target={link.external ? '_blank' : undefined}
                     rel={link.external ? 'noopener noreferrer' : undefined}
-                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-3 group p-2 -ml-2 rounded-lg hover:bg-white/5"
+                    aria-label={link.external ? `${link.label} (abre em nova janela)` : link.label}
+                    className="text-secondary-400 hover:text-white transition-colors flex items-center gap-3 group p-2 -ml-2 rounded-lg hover:bg-white/5"
                   >
                     <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
                       <link.icon className="h-4 w-4" />
@@ -201,7 +202,7 @@ export function Footer() {
 
             {/* CTA Mini */}
             <div className="mt-6 p-4 rounded-xl bg-gradient-to-r from-primary-600/20 to-secondary-600/20 border border-white/10">
-              <p className="text-sm text-gray-300 mb-2">Pronto para começar?</p>
+              <p className="text-sm text-secondary-300 mb-2">Pronto para começar?</p>
               <Link
                 href="/#contato"
                 className="text-accent-400 font-semibold text-sm hover:text-accent-300 transition-colors inline-flex items-center gap-1"
@@ -219,20 +220,20 @@ export function Footer() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : 0.4 }}
-          className="mt-16 pt-8 border-t border-gray-800"
+          className="mt-16 pt-8 border-t border-primary-800"
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
+            <p className="text-secondary-500 text-sm">
               © {currentYear} {SITE_CONFIG.name}. Todos os direitos reservados.
             </p>
-            <div className="flex gap-6 text-sm">
-              <Link href="/politica-privacidade" className="text-gray-500 hover:text-white transition-colors">
+            <nav aria-label="Links legais" className="flex gap-6 text-sm">
+              <Link href="/politica-privacidade" className="text-secondary-500 hover:text-white transition-colors">
                 Política de Privacidade
               </Link>
-              <Link href="/termos" className="text-gray-500 hover:text-white transition-colors">
+              <Link href="/termos" className="text-secondary-500 hover:text-white transition-colors">
                 Termos de Uso
               </Link>
-            </div>
+            </nav>
           </div>
         </motion.div>
       </div>

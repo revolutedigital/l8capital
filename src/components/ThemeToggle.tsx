@@ -33,9 +33,9 @@ export function ThemeToggle({ className }: { className?: string }) {
     return (
       <button
         className={cn(
-          'p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300',
-          'hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors',
-          'focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500',
+          'p-3 rounded-xl bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-secondary-300',
+          'hover:bg-primary-200 dark:hover:bg-primary-700 transition-all duration-300',
+          'focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500',
           'min-w-[44px] min-h-[44px] flex items-center justify-center',
           className
         )}
@@ -50,9 +50,9 @@ export function ThemeToggle({ className }: { className?: string }) {
     <button
       onClick={toggleTheme}
       className={cn(
-        'p-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300',
-        'hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors',
-        'focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500',
+        'p-3 rounded-xl bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-secondary-300',
+        'hover:bg-primary-200 dark:hover:bg-primary-700 transition-all duration-300',
+        'focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500',
         'min-w-[44px] min-h-[44px] flex items-center justify-center',
         className
       )}

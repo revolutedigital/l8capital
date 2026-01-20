@@ -254,13 +254,13 @@ export function ContactForm() {
                   {/* Form Glow */}
                   <div className="absolute -inset-4 bg-gradient-to-br from-accent-500/30 to-secondary-500/30 rounded-[2rem] blur-2xl opacity-60" />
 
-                  <div className="relative bg-white dark:bg-gray-800 rounded-3xl p-8 md:p-10 shadow-2xl border border-gray-100 dark:border-gray-700">
+                  <div className="relative bg-white dark:bg-primary-800 rounded-3xl p-8 md:p-10 shadow-2xl border border-secondary-100 dark:border-primary-700">
                     {/* Form Header */}
                     <div className="text-center mb-10">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-2">
                         Agende sua reunião gratuita
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-400">
+                      <p className="text-secondary-600 dark:text-secondary-400">
                         Preencha o formulário e entraremos em contato
                       </p>
                     </div>
@@ -333,23 +333,23 @@ export function ContactForm() {
                         </Button>
                       </Magnetic>
 
-                      <div className="flex items-center justify-center gap-8 pt-6 border-t border-gray-100 dark:border-gray-700">
+                      <div className="flex items-center justify-center gap-8 pt-6 border-t border-secondary-100 dark:border-primary-700">
                         <motion.div
-                          className="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm"
+                          className="flex items-center gap-2 text-secondary-500 dark:text-secondary-400 text-sm"
                           whileHover={{ scale: 1.05 }}
                         >
                           <Lock className="h-4 w-4" aria-hidden="true" />
                           <span>Dados protegidos</span>
                         </motion.div>
                         <motion.div
-                          className="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm"
+                          className="flex items-center gap-2 text-secondary-500 dark:text-secondary-400 text-sm"
                           whileHover={{ scale: 1.05 }}
                         >
                           <Shield className="h-4 w-4" aria-hidden="true" />
                           <span>Conforme LGPD</span>
                         </motion.div>
                       </div>
-                      <p className="text-center text-xs text-gray-400 dark:text-gray-500 mt-4">
+                      <p className="text-center text-xs text-secondary-400 dark:text-secondary-500 mt-4">
                         Sem spam. Resposta em até 24 horas úteis.
                       </p>
                     </form>

@@ -63,7 +63,7 @@ export function Preloader({ onComplete, minDuration = 2000 }: PreloaderProps) {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 z-[10000] flex flex-col items-center justify-center bg-gray-900"
+        className="fixed inset-0 z-[10000] flex flex-col items-center justify-center bg-primary-900"
         initial={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         animate={{ opacity: isExiting ? 0 : 1 }}
@@ -108,15 +108,15 @@ export function Preloader({ onComplete, minDuration = 2000 }: PreloaderProps) {
               className="absolute inset-0 flex items-center justify-center"
               animate={{
                 filter: [
-                  'drop-shadow(0 0 20px rgba(15, 76, 129, 0.4))',
-                  'drop-shadow(0 0 40px rgba(15, 76, 129, 0.6))',
-                  'drop-shadow(0 0 20px rgba(15, 76, 129, 0.4))',
+                  'drop-shadow(0 0 20px rgba(201, 162, 39, 0.4))',
+                  'drop-shadow(0 0 40px rgba(201, 162, 39, 0.6))',
+                  'drop-shadow(0 0 20px rgba(201, 162, 39, 0.4))',
                 ],
               }}
               transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
             >
               <img
-                src="/images/logos/l8-logo-v2.webp"
+                src="/images/logos/l8-logo_transp_branco.webp"
                 alt="L8 Capital"
                 className="w-full h-full object-contain"
               />
@@ -145,7 +145,7 @@ export function Preloader({ onComplete, minDuration = 2000 }: PreloaderProps) {
             L8 Capital
           </h1>
           <motion.p
-            className="text-primary-200 text-sm md:text-base"
+            className="text-secondary-300 text-sm md:text-base"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
@@ -161,7 +161,7 @@ export function Preloader({ onComplete, minDuration = 2000 }: PreloaderProps) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
+          <div className="h-1 bg-primary-800 rounded-full overflow-hidden">
             <motion.div
               className="h-full bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 rounded-full"
               initial={{ width: 0 }}
@@ -172,7 +172,7 @@ export function Preloader({ onComplete, minDuration = 2000 }: PreloaderProps) {
 
           {/* Progress text */}
           <motion.div
-            className="flex justify-between mt-3 text-xs text-gray-500"
+            className="flex justify-between mt-3 text-xs text-secondary-500"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
@@ -192,7 +192,7 @@ export function Preloader({ onComplete, minDuration = 2000 }: PreloaderProps) {
           {[0, 1, 2].map((i) => (
             <motion.div
               key={i}
-              className="w-2 h-2 rounded-full bg-gray-600"
+              className="w-2 h-2 rounded-full bg-primary-600"
               animate={{
                 scale: [1, 1.5, 1],
                 opacity: [0.3, 1, 0.3],

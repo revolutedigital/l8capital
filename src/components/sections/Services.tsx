@@ -52,7 +52,7 @@ export function Services() {
   const prefersReducedMotion = useReducedMotion()
 
   return (
-    <section id="solucoes" className="section-padding bg-gray-50 dark:bg-gray-900/50">
+    <section id="solucoes" className="section-padding bg-secondary-50 dark:bg-primary-900/50" aria-labelledby="services-heading">
       <div className="container-custom">
         <motion.div
           initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
@@ -64,17 +64,17 @@ export function Services() {
           <span className="inline-block text-sm font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wider mb-4">
             Nossas Soluções
           </span>
-          <h2 className="heading-2 text-gray-900 dark:text-white mb-4">
+          <h2 id="services-heading" className="heading-2 text-primary-900 dark:text-white mb-4">
             Soluções que fazem diferença no seu caixa
           </h2>
-          <p className="body-large text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="body-large text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
             Cada serviço foi pensado para resolver problemas reais de imobiliárias
           </p>
         </motion.div>
 
         <Tabs defaultValue="seguros" className="w-full">
           <div className="flex justify-center mb-10">
-            <TabsList className="bg-white dark:bg-gray-800 p-1.5 rounded-2xl shadow-lg">
+            <TabsList className="bg-white dark:bg-primary-800 p-1.5 rounded-2xl shadow-lg">
               {Object.entries(tabIcons).map(([key, Icon]) => (
                 <TabsTrigger
                   key={key}
@@ -97,7 +97,7 @@ export function Services() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: prefersReducedMotion ? 0.01 : 0.4 }}
                 >
-                  <div className="grid md:grid-cols-3 gap-6">
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {services.map((service, index) => {
                       const Icon = iconMap[service.icon] || IconShield
                       return (
@@ -108,7 +108,7 @@ export function Services() {
                           transition={{ duration: prefersReducedMotion ? 0.01 : 0.4, delay: prefersReducedMotion ? 0 : index * 0.1 }}
                           className="group"
                         >
-                          <div className="h-full bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:border-transparent hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                          <div className="h-full bg-white dark:bg-primary-800 rounded-2xl p-6 border border-secondary-200 dark:border-primary-700 hover:border-transparent hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                             {/* Icon */}
                             <div className={`inline-flex p-3 rounded-xl ${colors.light} mb-5`}>
                               <div className={colors.text}>
@@ -117,10 +117,10 @@ export function Services() {
                             </div>
 
                             {/* Content */}
-                            <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                            <h4 className="text-lg font-bold text-primary-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-accent-400 transition-colors">
                               {service.title}
                             </h4>
-                            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            <p className="text-secondary-600 dark:text-secondary-400 text-sm leading-relaxed">
                               {service.description}
                             </p>
 

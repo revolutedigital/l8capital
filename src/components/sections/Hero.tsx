@@ -37,7 +37,7 @@ export function Hero() {
         ) : (
           <MeshGradientFallback className="opacity-20 dark:opacity-30" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white dark:from-gray-900/80 dark:via-gray-900/60 dark:to-gray-900" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white dark:from-primary-900/80 dark:via-primary-900/60 dark:to-primary-900" />
       </div>
 
       {/* Grid */}
@@ -68,7 +68,7 @@ export function Hero() {
               </Badge>
             </motion.div>
 
-            <motion.h1 variants={item} className="heading-1 text-gray-900 dark:text-white mb-6">
+            <motion.h1 variants={item} className="heading-1 text-primary-900 dark:text-white mb-6">
               Imobiliárias parceiras economizam{' '}
               <span className="relative inline-block">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
@@ -79,7 +79,7 @@ export function Hero() {
               /mês em boletos.
             </motion.h1>
 
-            <motion.p variants={item} className="body-large text-gray-600 dark:text-gray-300 mb-10 max-w-xl">
+            <motion.p variants={item} className="body-large text-secondary-600 dark:text-secondary-300 mb-10 max-w-xl">
               {`Tecnologia própria + ${STATS.experience} anos de experiência em seguros = mais dinheiro no seu caixa e menos trabalho operacional.`}
             </motion.p>
 
@@ -175,10 +175,10 @@ export function Hero() {
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
         <Link href="/#problemas" className="flex flex-col items-center gap-3 group">
-          <span className="text-xs font-semibold tracking-widest uppercase text-gray-400">
+          <span className="text-xs font-semibold tracking-widest uppercase text-secondary-400">
             Explore
           </span>
-          <div className="w-6 h-10 border-2 border-gray-300 dark:border-gray-600 rounded-full flex justify-center pt-2">
+          <div className="w-6 h-10 border-2 border-secondary-300 dark:border-primary-600 rounded-full flex justify-center pt-2">
             <div className="w-1.5 h-3 bg-accent-500 rounded-full animate-bounce" />
           </div>
         </Link>

@@ -77,7 +77,7 @@ export function Header() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg shadow-gray-900/5'
+          ? 'bg-white/95 dark:bg-primary-900/95 backdrop-blur-md shadow-lg shadow-primary-900/5'
           : 'bg-transparent'
       )}
     >
@@ -87,23 +87,31 @@ export function Header() {
           <Link href="/" className="flex items-center gap-3 group min-h-[44px]">
             <div className="relative w-11 h-11 md:w-12 md:h-12 flex items-center justify-center">
               {/* Light mode logo */}
-              <img
+              <Image
                 src="/images/logos/l8-logo_transp_preto.webp"
                 alt="L8 Capital - Soluções Financeiras para Imobiliárias"
+                width={48}
+                height={48}
+                priority
+                fetchPriority="high"
                 className="w-full h-full object-contain transition-transform group-hover:scale-105 dark:hidden"
               />
               {/* Dark mode logo */}
-              <img
+              <Image
                 src="/images/logos/l8-logo_transp_branco.webp"
                 alt="L8 Capital - Soluções Financeiras para Imobiliárias"
+                width={48}
+                height={48}
+                priority
+                fetchPriority="high"
                 className="w-full h-full object-contain transition-transform group-hover:scale-105 hidden dark:block"
               />
             </div>
             <div className="hidden sm:block">
-              <span className="font-display font-bold text-xl text-gray-900 dark:text-white">
+              <span className="font-display font-bold text-xl text-primary-900 dark:text-white">
                 L8 Capital
               </span>
-              <span className="block text-xs text-gray-500 dark:text-gray-400 -mt-0.5">
+              <span className="block text-xs text-secondary-500 dark:text-secondary-400 -mt-0.5">
                 Sua imobiliária mais forte
               </span>
             </div>
@@ -115,7 +123,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                className="relative px-4 py-2 text-secondary-600 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors font-medium rounded-lg hover:bg-primary-50 dark:hover:bg-primary-800"
               >
                 {link.label}
               </Link>
@@ -147,7 +155,7 @@ export function Header() {
             <button
               ref={menuButtonRef}
               type="button"
-              className="p-3 text-gray-700 dark:text-gray-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+              className="p-3 text-primary-700 dark:text-secondary-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 rounded-xl bg-primary-100 dark:bg-primary-800 hover:bg-primary-200 dark:hover:bg-primary-700 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={isMobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
               aria-expanded={isMobileMenuOpen}
@@ -171,7 +179,7 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 shadow-xl"
+            className="lg:hidden bg-white dark:bg-primary-900 border-t border-primary-100 dark:border-primary-800 shadow-xl"
             onKeyDown={handleKeyDown}
           >
             <nav className="container-custom py-6 space-y-2" aria-label="Menu mobile">
@@ -184,7 +192,7 @@ export function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="flex items-center justify-between py-3 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-xl transition-colors font-medium"
+                    className="flex items-center justify-between py-3 px-4 text-primary-700 dark:text-secondary-300 hover:text-primary-900 dark:hover:text-accent-400 hover:bg-primary-50 dark:hover:bg-primary-800 rounded-xl transition-colors font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.label}
@@ -193,7 +201,7 @@ export function Header() {
                 </motion.div>
               ))}
 
-              <div className="pt-4 mt-4 border-t border-gray-100 dark:border-gray-800 space-y-3">
+              <div className="pt-4 mt-4 border-t border-primary-100 dark:border-primary-800 space-y-3">
                 <Link href="#contato" className="block" onClick={() => setIsMobileMenuOpen(false)}>
                   <Button variant="accent" className="w-full" rightIcon={<ChevronRight className="h-4 w-4" />}>
                     Agendar Reunião

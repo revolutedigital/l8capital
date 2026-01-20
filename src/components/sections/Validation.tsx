@@ -20,7 +20,7 @@ const features = [
 
 export function Validation() {
   return (
-    <section className="section-padding bg-gray-50 dark:bg-gray-800/50">
+    <section className="section-padding bg-secondary-50 dark:bg-primary-800/50" aria-labelledby="validation-heading">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export function Validation() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="heading-2 text-gray-900 dark:text-white">Solução validada no mercado</h2>
+          <h2 id="validation-heading" className="heading-2 text-primary-900 dark:text-white">Solução validada no mercado</h2>
         </motion.div>
 
         <motion.div
@@ -44,10 +44,10 @@ export function Validation() {
                 <Building2 className="h-7 w-7 text-primary-600" />
               </div>
               <div>
-                <h3 className="heading-3 text-gray-900 dark:text-white mb-2">
+                <h3 className="heading-3 text-primary-900 dark:text-white mb-2">
                   +{STATS.agencies} imobiliárias já usam esta solução
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-secondary-700 dark:text-secondary-300">
                   No Centro-Oeste, nosso parceiro estratégico opera com a mesma tecnologia e modelo
                   que estamos trazendo para São Paulo.
                 </p>
@@ -55,21 +55,21 @@ export function Validation() {
             </div>
 
             <div className="mb-6">
-              <p className="font-medium text-gray-900 dark:text-white mb-3">
+              <p className="font-medium text-primary-900 dark:text-white mb-3">
                 São mais de 400 imobiliárias que já:
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-2" role="list">
                 {validationPoints.map((point) => (
-                  <li key={point} className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <Check className="h-5 w-5 text-secondary-600 flex-shrink-0" />
+                  <li key={point} className="flex items-center gap-3 text-secondary-700 dark:text-secondary-300">
+                    <Check className="h-5 w-5 text-secondary-600 flex-shrink-0" aria-hidden="true" />
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="border-t border-gray-200 dark:border-gray-700 pt-6 mb-6">
-              <p className="text-lg text-gray-700 dark:text-gray-300 italic">
+            <div className="border-t border-secondary-200 dark:border-primary-700 pt-6 mb-6">
+              <p className="text-lg text-secondary-700 dark:text-secondary-300 italic">
                 "Agora é a vez de São Paulo conhecer o modelo que está transformando o mercado
                 imobiliário no Centro-Oeste."
               </p>
@@ -83,7 +83,7 @@ export function Validation() {
           </Card>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <motion.div
               key={feature.label}
@@ -94,10 +94,10 @@ export function Validation() {
             >
               <Card className="text-center p-6">
                 <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <feature.icon className="h-6 w-6 text-primary-600" />
+                  <feature.icon className="h-6 w-6 text-primary-600" aria-hidden="true" />
                 </div>
-                <h4 className="font-semibold text-gray-900 dark:text-white">{feature.label}</h4>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{feature.sublabel}</p>
+                <h4 className="font-semibold text-primary-900 dark:text-white">{feature.label}</h4>
+                <p className="text-sm text-secondary-500 dark:text-secondary-400">{feature.sublabel}</p>
               </Card>
             </motion.div>
           ))}

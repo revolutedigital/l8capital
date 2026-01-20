@@ -50,7 +50,7 @@ export function Problems() {
   const prefersReducedMotion = useReducedMotion()
 
   return (
-    <section className="section-padding bg-white dark:bg-gray-900 overflow-hidden">
+    <section id="problemas" className="section-padding bg-white dark:bg-primary-900 overflow-hidden" aria-labelledby="problems-heading">
       <div className="container-custom">
         {/* Header */}
         <FadeInOnScroll className="text-center mb-16">
@@ -62,20 +62,20 @@ export function Problems() {
             <span className="text-sm font-semibold">Problemas que Resolvemos</span>
           </motion.div>
 
-          <h2 className="heading-2 text-gray-900 dark:text-white mb-4">
+          <h2 id="problems-heading" className="heading-2 text-primary-900 dark:text-white mb-4">
             <TextReveal variant="slideUp">
               Você enfrenta esses desafios?
             </TextReveal>
           </h2>
-          <p className="body-large text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="body-large text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
             <TextReveal variant="wordByWord" delay={0.3} staggerChildren={0.03}>
               Se sim, você não está sozinho. A maioria das imobiliárias brasileiras passa por isso.
             </TextReveal>
           </p>
         </FadeInOnScroll>
 
-        {/* Problems Grid */}
-        <StaggerContainer className="grid md:grid-cols-3 gap-8 mb-16" staggerDelay={0.15}>
+        {/* Problems Grid - Tablet gets 2 cols, Desktop gets 3 */}
+        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16" staggerDelay={0.15}>
           {PROBLEMS.map((problem, index) => {
             const colors = problemColors[index]
             const Icon = problemIcons[problem.icon] || IconMarginProblem
@@ -106,10 +106,10 @@ export function Problems() {
                     </motion.div>
 
                     {/* Content */}
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                    <h3 className="text-xl font-bold text-primary-900 dark:text-white mb-3 relative z-10">
                       {problem.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400 relative z-10 mb-4">
+                    <p className="text-secondary-600 dark:text-secondary-400 relative z-10 mb-4">
                       {problem.description}
                     </p>
 
@@ -132,7 +132,7 @@ export function Problems() {
             animate={prefersReducedMotion ? {} : { y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <p className="text-gray-500 dark:text-gray-400 mb-4 text-sm font-medium">
+            <p className="text-secondary-500 dark:text-secondary-400 mb-4 text-sm font-medium">
               A L8 Capital resolve isso
             </p>
             <motion.div
