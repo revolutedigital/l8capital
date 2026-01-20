@@ -14,8 +14,8 @@ const stats = [
 ]
 
 const partners = [
-  { name: 'Parceiro 1', logo: '/images/logos/parceiro1-sm.webp' },
-  { name: 'Parceiro 2', logo: '/images/logos/parceiro2-sm.webp' },
+  { name: 'Parceiro 1', logo: '/images/logos/parceiro1.webp' },
+  { name: 'Parceiro 2', logo: '/images/logos/parceiro2.webp' },
 ]
 
 function AnimatedNumber({ value, prefix = '', suffix = '' }: { value: number; prefix?: string; suffix?: string }) {
@@ -132,7 +132,7 @@ export function CredibilityBar() {
           {/* L8 Logo */}
           <div className="h-16 w-36 md:h-20 md:w-44 flex items-center justify-center">
             <Image
-              src="/images/logos/l8-logo_transp_branco-sm.webp"
+              src="/images/logos/l8-logo_transp_branco.webp"
               alt="L8 Capital"
               width={160}
               height={72}

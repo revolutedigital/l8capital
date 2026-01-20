@@ -88,7 +88,7 @@ export function Header() {
             <div className="relative w-11 h-11 md:w-12 md:h-12 flex items-center justify-center">
               {/* Light mode logo */}
               <Image
-                src="/images/logos/l8-logo_transp_preto-sm.webp"
+                src="/images/logos/l8-logo_transp_preto.webp"
                 alt="L8 Capital - Soluções Financeiras para Imobiliárias"
                 width={48}
                 height={48}
@@ -98,7 +98,7 @@ export function Header() {
               />
               {/* Dark mode logo */}
               <Image
-                src="/images/logos/l8-logo_transp_branco-sm.webp"
+                src="/images/logos/l8-logo_transp_branco.webp"
                 alt="L8 Capital - Soluções Financeiras para Imobiliárias"
                 width={48}
                 height={48}

@@ -82,7 +82,7 @@ export function Preloader({ onComplete, minDuration = 800 }: PreloaderProps) {
           <div className="relative w-24 h-24 md:w-32 md:h-32">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/logos/l8-logo_transp_branco-sm.webp"
+              src="/images/logos/l8-logo_transp_branco.webp"
               alt="L8 Capital"
               width={128}
               height={128}
