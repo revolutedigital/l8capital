@@ -4,6 +4,7 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200],
     imageSizes: [16, 32, 48, 64, 96, 128],
+    minimumCacheTTL: 31536000,
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,13 +14,21 @@ const nextConfig = {
   },
   experimental: {
     optimizeCss: true,
+    optimizePackageImports: ['framer-motion', 'lucide-react'],
   },
   // Compiler options for smaller bundles
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  // Modern JS output (removes unnecessary polyfills)
-  transpilePackages: [],
+  // Strict mode for modern browsers only - eliminates legacy polyfills
+  reactStrictMode: true,
+  poweredByHeader: false,
+  // Optimize CSS loading
+  modularizeImports: {
+    'lucide-react': {
+      transform: 'lucide-react/dist/esm/icons/{{kebabCase member}}',
+    },
+  },
 };
 
 export default nextConfig;

@@ -9,8 +9,8 @@ import { useReducedMotion } from '@/hooks'
 import { MeshGradient, MeshGradientFallback, TiltCard } from '@/components/animations'
 import { IllustrationHero } from '@/components/illustrations'
 
-// Fast animation config - only for non-LCP elements
-const fast = { duration: 0.2, ease: [0.4, 0, 0.2, 1] }
+// Ultra-fast animation config - only for non-LCP elements
+const fast = { duration: 0.15, ease: [0.4, 0, 0.2, 1] }
 
 export function Hero() {
   const prefersReducedMotion = useReducedMotion()

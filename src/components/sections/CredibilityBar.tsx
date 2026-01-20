@@ -116,26 +116,28 @@ export function CredibilityBar() {
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="relative h-20 w-44 md:h-24 md:w-52 grayscale brightness-200 opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="h-16 w-36 md:h-20 md:w-44 grayscale brightness-200 opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
             >
               <Image
                 src={partner.logo}
                 alt={partner.name}
-                fill
-                sizes="(max-width: 768px) 176px, 208px"
-                className="object-contain"
+                width={160}
+                height={72}
+                loading="lazy"
+                className="object-contain w-full h-full"
               />
             </div>
           ))}
 
           {/* L8 Logo */}
-          <div className="relative h-20 w-44 md:h-24 md:w-52">
+          <div className="h-16 w-36 md:h-20 md:w-44 flex items-center justify-center">
             <Image
               src="/images/logos/l8-logo_transp_branco-sm.webp"
               alt="L8 Capital"
-              fill
-              sizes="(max-width: 768px) 176px, 208px"
-              className="object-contain"
+              width={160}
+              height={72}
+              loading="lazy"
+              className="object-contain w-full h-full"
             />
           </div>
         </motion.div>
