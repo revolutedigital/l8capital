@@ -65,7 +65,7 @@ export function CredibilityBar() {
       {/* Background - Premium Black */}
       <div className="absolute inset-0 bg-primary-900" />
       <div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-80"
         style={{
           backgroundImage: `url("/images/logos/bg_numeros_01.webp")`,
           backgroundSize: 'cover',
