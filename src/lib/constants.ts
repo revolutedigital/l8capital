@@ -109,7 +109,7 @@ export const FAQ_ITEMS = [
 export const PROBLEMS = [
   {
     title: 'Margem Apertada',
-    description: 'Boleto a R$ 6, seguros com comissão baixa, taxas que só aumentam. No final do mês, o que sobra é cada vez menos.',
+    description: 'Boletos, seguros, comissões, taxas que só aumentam. No final do mês, o que sobra é cada vez menos.',
     icon: 'piggy-bank',
   },
   {
