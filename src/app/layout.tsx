@@ -91,6 +91,45 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        {/* Critical CSS for LCP - inline to avoid render blocking */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              /* Critical CSS for faster LCP */
+              *,::after,::before{box-sizing:border-box;border:0 solid}
+              html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif}
+              body{margin:0;line-height:inherit}
+              h1{font-size:inherit;font-weight:inherit;margin:0}
+              .font-body{font-family:var(--font-inter),ui-sans-serif,system-ui,sans-serif}
+              .heading-1{font-size:2.25rem;line-height:1.1;font-weight:800;letter-spacing:-0.02em}
+              @media(min-width:768px){.heading-1{font-size:3rem}}
+              @media(min-width:1024px){.heading-1{font-size:3.75rem}}
+              .text-primary-900{color:#0F172A}
+              .dark .dark\\:text-white{color:#fff}
+              .mb-6{margin-bottom:1.5rem}
+              .relative{position:relative}
+              .min-h-screen{min-height:100vh}
+              .flex{display:flex}
+              .items-center{align-items:center}
+              .overflow-hidden{overflow:hidden}
+              .container-custom{width:100%;max-width:1280px;margin:0 auto;padding:0 1rem}
+              @media(min-width:640px){.container-custom{padding:0 1.5rem}}
+              .z-10{z-index:10}
+              .py-24{padding-top:6rem;padding-bottom:6rem}
+              @media(min-width:768px){.md\\:py-32{padding-top:8rem;padding-bottom:8rem}}
+              .grid{display:grid}
+              @media(min-width:1024px){.lg\\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+              .gap-12{gap:3rem}
+              .max-w-2xl{max-width:42rem}
+              .inline-block{display:inline-block}
+              .text-transparent{color:transparent}
+              .bg-clip-text{-webkit-background-clip:text;background-clip:text}
+              .bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}
+              .from-accent-500{--tw-gradient-from:#C9A227;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}
+              .to-secondary-500{--tw-gradient-to:#64748B}
+            `,
+          }}
+        />
         {/* Prefers-color-scheme fallback before JS loads */}
         <script
           dangerouslySetInnerHTML={{

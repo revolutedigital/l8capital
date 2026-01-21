@@ -23,13 +23,20 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background */}
+      {/* Background - Use static fallback on mobile for better LCP */}
       <div className="absolute inset-0">
-        {!prefersReducedMotion ? (
-          <MeshGradient className="opacity-30 dark:opacity-40" />
-        ) : (
+        {/* Mobile: always use static fallback for faster LCP */}
+        <div className="md:hidden">
           <MeshGradientFallback className="opacity-20 dark:opacity-30" />
-        )}
+        </div>
+        {/* Desktop: use animated gradient if motion is allowed */}
+        <div className="hidden md:block">
+          {!prefersReducedMotion ? (
+            <MeshGradient className="opacity-30 dark:opacity-40" />
+          ) : (
+            <MeshGradientFallback className="opacity-20 dark:opacity-30" />
+          )}
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white dark:from-primary-900/80 dark:via-primary-900/60 dark:to-primary-900" />
       </div>
 
