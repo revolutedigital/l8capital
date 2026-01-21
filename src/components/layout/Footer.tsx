@@ -9,15 +9,15 @@ import { useReducedMotion } from '@/hooks'
 
 const footerLinks = {
   solucoes: [
-    { label: 'Seguros', href: '#solucoes' },
-    { label: 'Financeiro', href: '#solucoes' },
-    { label: 'Capacitação', href: '#solucoes' },
-    { label: 'Como Funciona', href: '#como-funciona' },
+    { label: 'Seguros', href: '/#solucoes' },
+    { label: 'Financeiro', href: '/#solucoes' },
+    { label: 'Capacitação', href: '/#solucoes' },
+    { label: 'Como Funciona', href: '/#como-funciona' },
   ],
   recursos: [
     { label: 'Blog', href: '/blog' },
-    { label: 'Depoimentos', href: '#depoimentos' },
-    { label: 'FAQ', href: '#faq' },
+    { label: 'Depoimentos', href: '/#depoimentos' },
+    { label: 'FAQ', href: '/#faq' },
     { label: 'Quem Somos', href: '/quem-somos' },
   ],
   contato: [
