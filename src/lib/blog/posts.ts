@@ -23,17 +23,6 @@ export const blogPosts: BlogPost[] = [
     description:
       'Tudo que você precisa saber sobre seguro fiança locatícia: como funciona, quanto custa, vantagens para imobiliárias e inquilinos.',
     content: `
-## TL;DR
-
-O seguro fiança locatícia é uma modalidade de garantia para aluguel que substitui o fiador tradicional ou o depósito caução. O inquilino paga um prêmio anual (geralmente entre 1 e 2 aluguéis) e a seguradora garante o pagamento ao proprietário em caso de inadimplência.
-
-**Pontos principais:**
-- Custo médio: 1 a 2 aluguéis por ano
-- Aprovação: 24 a 72 horas
-- Cobertura: aluguel, IPTU, condomínio e danos ao imóvel
-
----
-
 ## O que é Seguro Fiança Locatícia?
 
 > **Definição:** Seguro fiança locatícia é uma modalidade de garantia de aluguel onde uma seguradora assume a responsabilidade de pagar ao proprietário em caso de inadimplência do inquilino.
@@ -115,17 +104,6 @@ Sim, a maioria das apólices inclui cobertura para danos ao imóvel até determi
     description:
       'Descubra como imobiliárias estão economizando até R$ 2.050/mês reduzindo a taxa de boleto de R$ 6 para R$ 1,90.',
     content: `
-## TL;DR
-
-A maioria das imobiliárias paga entre R$ 5 e R$ 7 por boleto emitido. Com negociação em volume, é possível reduzir para R$ 1,90 ou menos. Para uma imobiliária que emite 500 boletos/mês, isso representa economia de R$ 2.050/mês ou R$ 24.600/ano.
-
-**Pontos principais:**
-- Taxa média do mercado: R$ 5 a R$ 7 por boleto
-- Taxa negociada em volume: R$ 1,90 ou menos
-- Economia potencial: até R$ 24.600/ano
-
----
-
 ## Por que os boletos custam tanto?
 
 > **Definição:** A taxa de boleto é o valor cobrado pelo banco ou processador para emitir e processar cada boleto bancário.
@@ -179,18 +157,6 @@ A economia pode ser instantânea e vai depender da sua volumetria. Além disso, 
     description:
       'Entenda se o seguro incêndio é obrigatório em contratos de aluguel, quem paga, quanto custa e como a imobiliária pode ganhar com isso.',
     content: `
-## TL;DR
-
-Sim, o seguro incêndio é obrigatório para imóveis locados, conforme Lei do Inquilinato (Lei 8.245/91). O custo é responsabilidade do inquilino e representa cerca de 0,1% a 0,3% do valor do imóvel por ano. Para imobiliárias, é uma fonte de receita recorrente via comissão - não é receita única, é receita recorrente.
-
-**Pontos principais:**
-- Obrigatório por lei (Lei 8.245/91)
-- Custo: 0,1% a 0,3% do valor do imóvel/ano
-- Responsabilidade: inquilino
-- Oportunidade: comissão recorrente para imobiliária
-
----
-
 ## O que diz a lei?
 
 > **Lei 8.245/91, Art. 22:** "O locador é obrigado a: VIII - pagar os impostos e taxas, e ainda o prêmio de seguro complementar contra fogo, que incidam ou venham a incidir sobre o imóvel, salvo disposição expressa em contrário no contrato."
@@ -241,21 +207,6 @@ A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais 
     description:
       'Comparativo completo entre capitalização e caução como garantia locatícia. Entenda vantagens, desvantagens e qual é melhor para cada situação.',
     content: `
-## TL;DR
-
-A capitalização é uma alternativa moderna ao caução tradicional. Enquanto o caução exige depósito de 3 aluguéis que ficam parados, a capitalização permite que o inquilino aplique um valor similar mas com possibilidade de sorteio e resgate parcial. Para imobiliárias, a capitalização gera comissão; o caução, não.
-
-**Comparativo rápido:**
-
-| Aspecto | Caução | Capitalização |
-|---------|--------|---------------|
-| Valor | 3 aluguéis | 6 a 12 aluguéis |
-| Rendimento | Poupança | Sem rendimento (mas há sorteio) |
-| Comissão imobiliária | Não | Sim |
-| Devolução | No final | Parcial durante |
-
----
-
 ## O que é Caução?
 
 > **Definição:** Caução é o depósito de até 3 meses de aluguel feito pelo inquilino como garantia, que fica depositado em poupança durante a locação.
