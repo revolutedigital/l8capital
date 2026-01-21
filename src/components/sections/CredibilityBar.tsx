@@ -13,16 +13,10 @@ const stats = [
 ]
 
 const partners = [
-  {
-    name: 'Garanteasy',
-    logoLight: '/images/logos/garanteasy_logotipo.webp',
-    logoDark: '/images/logos/garanteasy_logotipo_branco.webp'
-  },
-  {
-    name: 'Brava Capital',
-    logoLight: '/images/logos/brava_logotipo.webp',
-    logoDark: '/images/logos/brava_logotipo_branco.webp'
-  },
+  { name: 'Parceiro 1', logo: '/images/logos/parceiro1.webp' },
+  { name: 'Parceiro 2', logo: '/images/logos/parceiro2.webp' },
+  { name: 'Garanteasy', logo: '/images/logos/garanteasy_logotipo.webp' },
+  { name: 'Brava Capital', logo: '/images/logos/brava_logotipo.webp' },
 ]
 
 function AnimatedNumber({ value, prefix = '', suffix = '' }: { value: number; prefix?: string; suffix?: string }) {
@@ -123,10 +117,10 @@ export function CredibilityBar() {
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="h-16 w-36 md:h-20 md:w-44 opacity-80 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
+              className="h-16 w-36 md:h-20 md:w-44 grayscale brightness-200 opacity-80 hover:grayscale-0 hover:brightness-100 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
             >
               <Image
-                src={partner.logoDark}
+                src={partner.logo}
                 alt={partner.name}
                 width={160}
                 height={72}
