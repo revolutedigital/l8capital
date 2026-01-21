@@ -19,7 +19,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: 'seguro-fianca-locaticia-guia-completo',
-    title: 'Seguro Fiança Locatícia: Guia Completo 2025',
+    title: 'Seguro Fiança Locatícia: Guia Completo 2026',
     description:
       'Tudo que você precisa saber sobre seguro fiança locatícia: como funciona, quanto custa, vantagens para imobiliárias e inquilinos.',
     content: `
@@ -74,13 +74,16 @@ O valor do prêmio depende principalmente de:
 
 ## Como a L8 Capital pode ajudar
 
-Na L8, trabalhamos com as principais seguradoras do mercado e oferecemos:
+A L8 Capital é uma plataforma digital de soluções financeiras para imobiliárias em São Paulo. Utilizamos a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Centro-Oeste através do nosso parceiro estratégico [Alugue sem Fiador](https://aluguesemfiador.net).
+
+Na L8, oferecemos:
 - Taxas competitivas negociadas em volume
 - Aprovação em até 72 horas
 - Comissão recorrente enquanto o contrato estiver ativo
 - Gestão automatizada das apólices
+- Tecnologia própria que reduz sua carga operacional
 
-**Próximo passo:** [Agendar uma conversa gratuita](/contato) para entender como aumentar sua receita com seguros.
+**Próximo passo:** [Agendar uma conversa gratuita](/#contato) para entender como aumentar sua receita com seguros.
 
 ---
 
@@ -96,7 +99,7 @@ Em média, 24 a 72 horas. Com a L8, trabalhamos para acelerar esse processo ao m
 Sim, a maioria das apólices inclui cobertura para danos ao imóvel até determinado limite. Verifique as condições específicas de cada seguradora.
     `,
     publishedAt: '2025-01-10',
-    updatedAt: '2025-01-10',
+    updatedAt: '2026-01-21',
     author: {
       name: 'Equipe L8',
       role: 'Especialistas em Seguros',
@@ -147,7 +150,7 @@ Bancos tradicionais cobram taxas elevadas porque:
 
 ## O modelo L8 Capital
 
-Na L8, consolidamos o volume de +400 imobiliárias para negociar taxas melhores:
+A L8 Capital utiliza a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Centro-Oeste através do nosso parceiro estratégico [Alugue sem Fiador](https://aluguesemfiador.net). Esse volume consolidado nos permite negociar taxas muito mais competitivas:
 
 | Situação | Taxa por Boleto | 500 boletos/mês |
 |----------|-----------------|-----------------|
@@ -155,10 +158,12 @@ Na L8, consolidamos o volume de +400 imobiliárias para negociar taxas melhores:
 | L8 Capital | R$ 1,90 | R$ 950/mês |
 | **Economia** | **R$ 4,10** | **R$ 2.050/mês** |
 
-**Próximo passo:** [Fale conosco](/contato) para calcular sua economia potencial.
+A economia pode ser instantânea e vai depender da sua volumetria. Além disso, podemos conversar sobre antecipação de recebíveis e fluxo de caixa.
+
+**Próximo passo:** [Fale conosco](/#contato) para calcular sua economia potencial.
     `,
     publishedAt: '2025-01-08',
-    updatedAt: '2025-01-08',
+    updatedAt: '2026-01-21',
     author: {
       name: 'Equipe L8',
       role: 'Especialistas Financeiros',
@@ -176,7 +181,7 @@ Na L8, consolidamos o volume de +400 imobiliárias para negociar taxas melhores:
     content: `
 ## TL;DR
 
-Sim, o seguro incêndio é obrigatório para imóveis locados, conforme Lei do Inquilinato (Lei 8.245/91). O custo é responsabilidade do inquilino e representa cerca de 0,1% a 0,3% do valor do imóvel por ano. Para imobiliárias, é uma fonte de receita recorrente via comissão.
+Sim, o seguro incêndio é obrigatório para imóveis locados, conforme Lei do Inquilinato (Lei 8.245/91). O custo é responsabilidade do inquilino e representa cerca de 0,1% a 0,3% do valor do imóvel por ano. Para imobiliárias, é uma fonte de receita recorrente via comissão - não é receita única, é receita recorrente.
 
 **Pontos principais:**
 - Obrigatório por lei (Lei 8.245/91)
@@ -210,11 +215,18 @@ O seguro incêndio pode ser fonte de receita recorrente:
 - Comissão sobre cada apólice vendida
 - Renovação automática anual
 - Gestão simplificada com parceiros certos
+- Com a L8, além de proteção, você ganha previsibilidade de receita
 
-**Próximo passo:** [Descubra quanto sua imobiliária pode ganhar](/contato) com seguros.
+---
+
+## Como a L8 Capital pode ajudar
+
+A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net). Não estamos testando algo novo - estamos trazendo para São Paulo algo que já funciona.
+
+**Próximo passo:** [Descubra quanto sua imobiliária pode ganhar](/#contato) com seguros.
     `,
     publishedAt: '2025-01-05',
-    updatedAt: '2025-01-05',
+    updatedAt: '2026-01-21',
     author: {
       name: 'Equipe L8',
       role: 'Especialistas em Seguros',
@@ -252,7 +264,7 @@ A capitalização é uma alternativa moderna ao caução tradicional. Enquanto o
 
 ## O que é Capitalização?
 
-> **Definição:** Capitalização locatícia é um título onde o inquilino aplica um valor que serve como garantia, com possibilidade de sorteio e resgate parcial.
+> **Definição:** Capitalização locatícia é um título onde o inquilino aplica um valor que serve como garantia, com possibilidade de sorteio e resgate parcial. É uma alternativa moderna, onde seu inquilino aplica o dinheiro (e ainda pode ser sorteado) e o proprietário tem garantia no contrato.
 
 ---
 
@@ -268,10 +280,18 @@ A capitalização é uma alternativa moderna ao caução tradicional. Enquanto o
 - Imobiliária quer gerar comissão
 - Inquilino gosta da possibilidade de sorteio
 
-**Próximo passo:** [Entenda todas as opções de garantia](/contato) disponíveis para sua imobiliária.
+---
+
+## Como a L8 Capital pode ajudar
+
+A L8 Capital oferece todas as modalidades de garantia locatícia: seguro fiança, capitalização e também orientação sobre caução. Utilizamos tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net).
+
+Nosso modelo funciona para todas as imobiliárias, pois a tecnologia reduz o operacional e temos um time especializado para apoiar você em todo o processo.
+
+**Próximo passo:** [Entenda todas as opções de garantia](/#contato) disponíveis para sua imobiliária.
     `,
     publishedAt: '2025-01-03',
-    updatedAt: '2025-01-03',
+    updatedAt: '2026-01-21',
     author: {
       name: 'Equipe L8',
       role: 'Especialistas em Garantias',
