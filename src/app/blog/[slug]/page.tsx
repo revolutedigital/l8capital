@@ -146,13 +146,15 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="max-w-3xl mx-auto">
               <Link
                 href="/blog"
-                className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-8"
+                className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
                 Voltar ao Blog
               </Link>
 
-              <Badge className="mb-6">{post.category}</Badge>
+              <div className="mb-6">
+                <Badge>{post.category}</Badge>
+              </div>
 
               <h1 className="heading-1 text-gray-900 dark:text-white mb-6">{post.title}</h1>
 
