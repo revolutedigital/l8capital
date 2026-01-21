@@ -1,21 +1,28 @@
 'use client'
 
 import Image from 'next/image'
-import { STATS } from '@/lib/constants'
 import { motion, useInView } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
 import { useReducedMotion } from '@/hooks'
 
 const stats = [
   { number: 400, suffix: '+', label: 'Imobiliárias', sublabel: 'parceiras' },
-  { number: 24, suffix: '', label: 'Anos', sublabel: 'de experiência' },
-  { number: 2050, prefix: 'R$ ', suffix: '', label: 'Economia', sublabel: 'por mês' },
+  { number: 20, suffix: '+', label: 'Anos', sublabel: 'de experiência' },
+  { number: 20, suffix: '+', label: 'Especialistas', sublabel: 'no seu suporte' },
   { number: 100, suffix: '%', label: 'Tecnologia', sublabel: 'própria' },
 ]
 
 const partners = [
-  { name: 'Parceiro 1', logo: '/images/logos/parceiro1.webp' },
-  { name: 'Parceiro 2', logo: '/images/logos/parceiro2.webp' },
+  {
+    name: 'Garanteasy',
+    logoLight: '/images/logos/garanteasy_logotipo.webp',
+    logoDark: '/images/logos/garanteasy_logotipo_branco.webp'
+  },
+  {
+    name: 'Brava Capital',
+    logoLight: '/images/logos/brava_logotipo.webp',
+    logoDark: '/images/logos/brava_logotipo_branco.webp'
+  },
 ]
 
 function AnimatedNumber({ value, prefix = '', suffix = '' }: { value: number; prefix?: string; suffix?: string }) {
@@ -116,10 +123,10 @@ export function CredibilityBar() {
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="h-16 w-36 md:h-20 md:w-44 grayscale brightness-200 opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
+              className="h-16 w-36 md:h-20 md:w-44 opacity-80 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
             >
               <Image
-                src={partner.logo}
+                src={partner.logoDark}
                 alt={partner.name}
                 width={160}
                 height={72}
@@ -128,18 +135,6 @@ export function CredibilityBar() {
               />
             </div>
           ))}
-
-          {/* L8 Logo */}
-          <div className="h-16 w-36 md:h-20 md:w-44 flex items-center justify-center">
-            <Image
-              src="/images/logos/l8-logo_transp_branco.webp"
-              alt="L8 Capital"
-              width={160}
-              height={72}
-              loading="lazy"
-              className="object-contain w-full h-full"
-            />
-          </div>
         </motion.div>
 
         {/* Bottom Text */}
