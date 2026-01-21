@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { Button, Input, PhoneInput, Select } from '@/components/ui'
-import { SITE_CONFIG, STATS } from '@/lib/constants'
+import { SITE_CONFIG } from '@/lib/constants'
 import { MessageCircle, Check, Lock, ArrowRight, Shield, Clock, Sparkles } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useReducedMotion } from '@/hooks'
@@ -22,11 +22,13 @@ import {
 
 const contactSchema = z.object({
   name: z.string().min(3, 'Nome deve ter pelo menos 3 caracteres'),
+  company: z.string().min(2, 'Razão social deve ter pelo menos 2 caracteres'),
   email: z.string().email('Digite um e-mail válido'),
   whatsapp: z
     .string()
     .min(10, 'Digite um número com DDD')
     .regex(/^[0-9]+$/, 'Digite apenas números'),
+  region: z.string().min(1, 'Selecione uma região'),
   size: z.string().min(1, 'Selecione uma opção'),
 })
 
@@ -37,6 +39,17 @@ const sizeOptions = [
   { value: '51-150', label: '51-150 imóveis' },
   { value: '151-500', label: '151-500 imóveis' },
   { value: 'mais-500', label: 'Mais de 500 imóveis' },
+]
+
+const regionOptions = [
+  { value: 'zona-sul', label: 'Zona Sul' },
+  { value: 'zona-norte', label: 'Zona Norte' },
+  { value: 'zona-leste', label: 'Zona Leste' },
+  { value: 'zona-oeste', label: 'Zona Oeste' },
+  { value: 'centro', label: 'Centro' },
+  { value: 'grande-sp', label: 'Grande São Paulo' },
+  { value: 'interior', label: 'Interior de SP' },
+  { value: 'outros', label: 'Outros estados' },
 ]
 
 export function ContactForm() {
@@ -182,11 +195,11 @@ export function ContactForm() {
 
             <h2 className="heading-2 text-white mb-6">
               <TextReveal variant="slideUp">
-                Sua imobiliária pode ser a próxima a economizar
+                Sua imobiliária pode ser a próxima a
               </TextReveal>{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">
                 <TextReveal variant="slideUp" delay={0.3}>
-                  {`R$ ${STATS.savings}/mês`}
+                  aumentar receita e reduzir custos
                 </TextReveal>
               </span>
             </h2>
@@ -280,6 +293,15 @@ export function ContactForm() {
                       </motion.div>
 
                       <Input
+                        label="Razão social"
+                        placeholder="Digite o nome da empresa"
+                        error={errors.company?.message}
+                        autoComplete="organization"
+                        required
+                        {...register('company')}
+                      />
+
+                      <Input
                         label="E-mail corporativo"
                         type="email"
                         placeholder="seu@email.com"
@@ -296,6 +318,15 @@ export function ContactForm() {
                         autoComplete="tel"
                         required
                         onValueChange={(value) => setValue('whatsapp', value, { shouldValidate: true })}
+                      />
+
+                      <Select
+                        label="Região"
+                        placeholder="Selecione sua região"
+                        options={regionOptions}
+                        error={errors.region?.message}
+                        required
+                        {...register('region')}
                       />
 
                       <Select
