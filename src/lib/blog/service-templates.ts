@@ -1657,7 +1657,6 @@ export const vistoriaTemplate: ServiceTemplate = {
   generateContent: (location: Location) => {
     const locationContext = getLocationContext(location)
     const locationPrep = getLocationPreposition(location)
-    const avgVistoriaPrice = 400
 
     return {
       title: `Vistoria de Imóveis ${location.name}: Parceria L8 | 2026`,
@@ -1671,7 +1670,6 @@ export const vistoriaTemplate: ServiceTemplate = {
 ## TL;DR - Vistoria de Imóveis ${location.name}
 
 - **Serviço:** Vistoria técnica de entrada e saída
-- **Preço médio:** ${formatCurrency(avgVistoriaPrice)}/vistoria
 - **Parceria:** Sem custo para imobiliária, inquilino paga
 - **Benefício:** Laudo técnico que evita conflitos
 - **Diferencial:** Fotos georreferenciadas e App móvel
@@ -1694,7 +1692,7 @@ export const vistoriaTemplate: ServiceTemplate = {
 
 **Modelo de Negócio:**
 1. Imobiliária indica vistoria para o inquilino
-2. Inquilino paga ${formatCurrency(avgVistoriaPrice)} (média)
+2. Inquilino contrata o serviço diretamente
 3. Parceiro L8 faz a vistoria
 4. Imobiliária recebe comissão
 5. Todos ganham (especialmente o proprietário, que fica protegido)
@@ -1747,7 +1745,7 @@ ${location.metadata.realEstateAgencies ? `\n### Oportunidade ${location.name}\n\
 ## Investimento
 
 **Para imobiliária:** R$ 0 (zero)
-**Para inquilino:** ${formatCurrency(avgVistoriaPrice)} (média)
+**Para inquilino:** Valor varia conforme o tamanho do imóvel
 **Comissão imobiliária:** Consulte condições
 
 ---
