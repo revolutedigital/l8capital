@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { SITE_CONFIG } from '@/lib/constants'
-import { MessageCircle, Mail, Linkedin, MapPin, Phone, Shield, Lock, ArrowUpRight } from 'lucide-react'
+import { MessageCircle, Mail, Instagram, MapPin, Phone, Shield, Lock, ArrowUpRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useReducedMotion } from '@/hooks'
 
@@ -17,7 +17,7 @@ const footerLinks = {
   recursos: [
     { label: 'Blog', href: '/blog' },
     { label: 'FAQ', href: '#faq' },
-    { label: 'Sobre Nós', href: '#sobre' },
+    { label: 'Quem Somos', href: '/quem-somos' },
   ],
   contato: [
     {
@@ -27,15 +27,21 @@ const footerLinks = {
       external: true,
     },
     {
-      label: SITE_CONFIG.email,
-      href: `mailto:${SITE_CONFIG.email}`,
+      label: 'comercial@l8capital.com.br',
+      href: 'mailto:comercial@l8capital.com.br',
       icon: Mail,
       external: false,
     },
     {
-      label: 'LinkedIn',
-      href: 'https://linkedin.com/company/l8capital',
-      icon: Linkedin,
+      label: 'Garanteasy',
+      href: 'https://www.instagram.com/sejagaranteasy/',
+      icon: Instagram,
+      external: true,
+    },
+    {
+      label: 'Alugue sem Fiador',
+      href: 'https://www.instagram.com/asfaluguesemfiador/',
+      icon: Instagram,
       external: true,
     },
   ],
@@ -96,7 +102,7 @@ export function Footer() {
             </Link>
 
             <p className="text-secondary-400 mb-6 max-w-xs">
-              Plataforma digital de soluções financeiras que fortalece imobiliárias há mais de 24 anos.
+              Plataforma digital de soluções financeiras que fortalece imobiliárias há mais de 20 anos.
             </p>
 
             <div className="flex items-center gap-2 text-secondary-500 text-sm mb-6">
