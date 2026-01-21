@@ -64,7 +64,7 @@ export function Hero() {
             >
               <Badge variant="highlight" className="inline-flex items-center gap-2 px-4 py-2">
                 <Zap className="w-4 h-4 text-accent-100" aria-hidden="true" />
-                <span className="font-semibold">Novo em São Paulo</span>
+                <span className="font-semibold">Exclusivo para imobiliárias</span>
               </Badge>
             </motion.div>
 
