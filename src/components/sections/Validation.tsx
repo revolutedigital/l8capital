@@ -14,7 +14,7 @@ const validationPoints = [
 
 const features = [
   { icon: Cpu, label: 'Tecnologia Própria', sublabel: '100% integrada' },
-  { icon: Clock, label: '24 Anos', sublabel: 'no setor de seguros' },
+  { icon: Clock, label: '+20 Anos', sublabel: 'no setor de seguros' },
   { icon: BadgeCheck, label: 'Modelo Validado', sublabel: '+400 imobiliárias' },
 ]
 
@@ -48,8 +48,16 @@ export function Validation() {
                   +{STATS.agencies} imobiliárias já usam esta solução
                 </h3>
                 <p className="text-secondary-700 dark:text-secondary-300">
-                  No Centro-Oeste, nosso parceiro estratégico opera com a mesma tecnologia e modelo
-                  que estamos trazendo para São Paulo.
+                  No Centro-Oeste, a{' '}
+                  <a
+                    href="https://aluguesemfiador.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-600 dark:text-accent-400 hover:underline font-medium"
+                  >
+                    Alugue sem Fiador
+                  </a>{' '}
+                  opera com a mesma tecnologia e modelo que estamos trazendo para São Paulo.
                 </p>
               </div>
             </div>
