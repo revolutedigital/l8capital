@@ -38,6 +38,11 @@ export const SERVICES = {
       description: 'Alternativa moderna, onde seu inquilino aplica o dinheiro (e ainda pode ser sorteado) e o proprietário tem garantia no contrato.',
       icon: 'piggy-bank',
     },
+    {
+      title: 'Consórcio',
+      description: 'Ofereça aos seus clientes uma forma inteligente de adquirir imóveis. Nova fonte de receita recorrente para sua imobiliária.',
+      icon: 'home',
+    },
   ],
   financeiro: [
     {
@@ -124,7 +129,7 @@ export const PROBLEMS = [
 export const VALUE_PROPS = [
   {
     title: 'Aumentar Receita',
-    description: 'Comissões de seguros que você já oferece, mas ganha pouco. Rentabilização do dinheiro em trânsito na sua conta.',
+    description: 'Comissões de seguros e consórcio que você já oferece, mas ganha pouco. Rentabilização do dinheiro em trânsito na sua conta.',
     icon: 'trending-up',
     highlight: true,
   },

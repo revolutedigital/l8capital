@@ -516,3 +516,34 @@ export function IconTraining({ size = 24, ...props }: IconProps) {
   )
 }
 
+// Ícone Casa/Consórcio
+export function IconHome({ size = 24, ...props }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <rect width="48" height="48" rx="12" fill="currentColor" fillOpacity="0.1" />
+      <path
+        d="M14 24L24 14L34 24"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M18 22V34H30V22"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <rect x="22" y="26" width="4" height="8" stroke="currentColor" strokeWidth="2" />
+    </svg>
+  )
+}
+

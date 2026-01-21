@@ -14,6 +14,7 @@ import {
   IconPartnership,
   IconSettings,
   IconClipboard,
+  IconHome,
 } from '@/components/icons'
 import { ArrowRight, Shield, Receipt, Users } from 'lucide-react'
 import Link from 'next/link'
@@ -28,6 +29,7 @@ const iconMap: Record<string, React.ElementType> = {
   users: IconPartnership,
   settings: IconSettings,
   'clipboard-check': IconClipboard,
+  home: IconHome,
 }
 
 const tabIcons = {
