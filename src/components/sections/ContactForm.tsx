@@ -197,7 +197,7 @@ export function ContactForm() {
               <TextReveal variant="slideUp">
                 Sua imobiliária pode ser a próxima a
               </TextReveal>{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">
+              <span className="text-secondary-300">
                 <TextReveal variant="slideUp" delay={0.3}>
                   aumentar receita e reduzir custos
                 </TextReveal>
@@ -280,7 +280,7 @@ export function ContactForm() {
                       </p>
                     </div>
 
-                    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                       <motion.div whileFocus={{ scale: 1.02 }}>
                         <Input
                           label="Nome completo"

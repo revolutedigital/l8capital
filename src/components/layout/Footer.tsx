@@ -16,6 +16,7 @@ const footerLinks = {
   ],
   recursos: [
     { label: 'Blog', href: '/blog' },
+    { label: 'Depoimentos', href: '#depoimentos' },
     { label: 'FAQ', href: '#faq' },
     { label: 'Quem Somos', href: '/quem-somos' },
   ],

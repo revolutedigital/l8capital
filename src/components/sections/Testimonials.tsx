@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useReducedMotion } from '@/hooks'
 import { Quote, Star } from 'lucide-react'
@@ -11,6 +12,7 @@ const testimonials = [
     company: 'Imobiliária em Campo Grande-MS',
     content: 'Desde sua criação, fomos a primeira Imobiliária a utilizar o serviço em Campo Grande-MS. A parceria tem sido fundamental para o crescimento dos nossos negócios.',
     yearsSince: 2014,
+    image: '/images/logos/dep-bianca-botelho.webp',
   },
   {
     name: 'João Paulo Machado de Araujo',
@@ -18,6 +20,7 @@ const testimonials = [
     company: 'Imobiliária Betel',
     content: 'Em 2015 começamos a ser atendidos e desde então a parceria só cresce. O suporte é excelente e a tecnologia facilita muito nossa operação diária.',
     yearsSince: 2015,
+    image: '/images/logos/dep-joao-paulo-machado.webp',
   },
   {
     name: 'Leonel Marchiotti Fernandes',
@@ -25,6 +28,7 @@ const testimonials = [
     company: 'Imobiliária Colmeia',
     content: 'Parceiro desde 2015. A facilidade e segurança durante sinistros fazem toda a diferença na nossa operação. Confiamos plenamente na parceria.',
     yearsSince: 2015,
+    image: '/images/logos/dep-leonel-fernandes.webp',
   },
   {
     name: 'Karina Abussafi',
@@ -32,6 +36,7 @@ const testimonials = [
     company: 'Imobiliária',
     content: 'Desde 2017 tem se tornado um grande fomentador de negócios. A agilidade e confiança na parceria nos permite fechar mais locações com segurança.',
     yearsSince: 2017,
+    image: '/images/logos/dep-karina-abussafi.webp',
   },
   {
     name: 'Thomaz Ugri',
@@ -39,6 +44,7 @@ const testimonials = [
     company: 'Colméia Imóveis',
     content: 'Parceiro desde 2017. A garantia é versátil e rápida, exatamente o que precisamos para atender nossos clientes com excelência.',
     yearsSince: 2017,
+    image: '/images/logos/dep-thomaz-ugri.webp',
   },
   {
     name: 'Luciano Tannus',
@@ -46,6 +52,7 @@ const testimonials = [
     company: '',
     content: 'Há aproximadamente dois anos nos oferece agilidade na efetivação das locações. A parceria facilita muito o dia a dia e aumenta nossa taxa de conversão.',
     yearsSince: 2022,
+    image: '/images/logos/dep-luciano-tannus.webp',
   },
 ]
 
@@ -53,7 +60,7 @@ export function Testimonials() {
   const prefersReducedMotion = useReducedMotion()
 
   return (
-    <section className="section-padding bg-white dark:bg-primary-900 overflow-hidden" aria-labelledby="testimonials-heading">
+    <section id="depoimentos" className="section-padding bg-white dark:bg-primary-900 overflow-hidden" aria-labelledby="testimonials-heading">
       <div className="container-custom">
         {/* Header */}
         <motion.div
@@ -107,9 +114,15 @@ export function Testimonials() {
 
                 {/* Author */}
                 <div className="flex items-center gap-4 pt-6 border-t border-secondary-200 dark:border-primary-700">
-                  {/* Avatar Placeholder */}
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center text-white font-bold text-lg">
-                    {testimonial.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                  {/* Avatar */}
+                  <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      width={48}
+                      height={48}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <p className="font-semibold text-primary-900 dark:text-white">

@@ -53,7 +53,7 @@ export function Validation() {
                     href="https://aluguesemfiador.net"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary-600 dark:text-accent-400 hover:underline font-medium"
+                    className="text-accent-600 dark:text-accent-400 font-bold underline decoration-2 underline-offset-2 hover:text-accent-700 dark:hover:text-accent-300 transition-colors"
                   >
                     Alugue sem Fiador
                   </a>{' '}
