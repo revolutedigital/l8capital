@@ -96,7 +96,7 @@ export function HowItWorks() {
                   <div className={`mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-full ${colors.light}`}>
                     <Clock className={`w-4 h-4 ${colors.text}`} />
                     <span className={`text-sm font-medium ${colors.text}`}>
-                      {index === 0 ? '30 min' : index === 1 ? 'Gratuito' : '7 dias'}
+                      {index === 0 ? '30 min' : index === 1 ? '2 dias e gratuito' : '7 dias'}
                     </span>
                   </div>
                 </motion.div>

@@ -162,7 +162,7 @@ export const STEPS = [
   {
     number: '3',
     title: 'Implementação',
-    description: 'Se fizer sentido para os dois lados, começamos em até 7 dias. Sem burocracia, sem dor de cabeça, sem legado.',
+    description: 'Se fizer sentido para os dois lados, começamos em até 7 dias. Sem burocracia, sem dor de cabeça, sem traumas.',
     icon: 'rocket',
   },
 ]
