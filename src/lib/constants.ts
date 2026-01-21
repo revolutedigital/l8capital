@@ -133,7 +133,7 @@ export const VALUE_PROPS = [
   },
   {
     title: 'Reduzir Custos',
-    description: 'Taxa de boleto: de R$ 6,00 para R$ 1,90. 500 boletos/mês = R$ 2.050 de economia real.',
+    description: 'Taxas de boleto mais baixas, vistorias com condições exclusivas (em breve). Negociamos em volume e repassamos a economia.',
     icon: 'piggy-bank',
     highlight: false,
   },
