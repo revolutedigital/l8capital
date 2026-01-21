@@ -168,8 +168,8 @@ export const STEPS = [
 ]
 
 export const COMPARISON = [
-  { traditional: 'Fornecedor', l8: 'Parceiro' },
-  { traditional: 'Comissão única', l8: 'Ganho recorrente' },
+  { traditional: 'Fornecedor', l8: 'Parceiro / Sócio' },
+  { traditional: 'Receita única', l8: 'Receita recorrente' },
   { traditional: '"Precisa de seguro?"', l8: '"Como aumentar sua receita?"' },
   { traditional: 'Tecnologia terceirizada', l8: 'Tecnologia própria' },
   { traditional: 'Processos rígidos', l8: 'Agilidade de startup' },
