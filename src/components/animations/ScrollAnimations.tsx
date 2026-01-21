@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, ReactNode } from 'react'
+import { useRef, useState, useEffect, ReactNode } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 // Fast, snappy transitions
@@ -109,7 +109,7 @@ export function HorizontalScroll({ children, className = '' }: HorizontalScrollP
   )
 }
 
-// Scroll Progress - CSS only, no motion
+// Scroll Progress - React-based for proper client navigation
 interface ScrollProgressProps {
   color?: string
   height?: number
@@ -121,30 +121,30 @@ export function ScrollProgress({
   height = 3,
   position = 'top'
 }: ScrollProgressProps) {
+  const [progress, setProgress] = useState(0)
+
+  useEffect(() => {
+    const updateProgress = () => {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight
+      const scrollProgress = scrollHeight > 0 ? window.scrollY / scrollHeight : 0
+      setProgress(scrollProgress)
+    }
+
+    window.addEventListener('scroll', updateProgress, { passive: true })
+    updateProgress()
+
+    return () => window.removeEventListener('scroll', updateProgress)
+  }, [])
+
   return (
     <div
       className={`fixed left-0 right-0 z-50 ${position === 'top' ? 'top-0' : 'bottom-0'}`}
       style={{ height }}
     >
       <div
-        className={`h-full ${color} origin-left`}
+        className={`h-full ${color} origin-left transition-transform duration-75`}
         style={{
-          transform: 'scaleX(var(--scroll-progress, 0))',
-        }}
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              var update = function() {
-                var h = document.documentElement.scrollHeight - window.innerHeight;
-                var p = h > 0 ? window.scrollY / h : 0;
-                document.documentElement.style.setProperty('--scroll-progress', p);
-              };
-              window.addEventListener('scroll', update, { passive: true });
-              update();
-            })();
-          `
+          transform: `scaleX(${progress})`,
         }}
       />
     </div>
