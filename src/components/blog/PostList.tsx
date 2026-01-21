@@ -57,7 +57,7 @@ export function PostList({ posts, postsPerPage = 30 }: PostListProps) {
 
       {hasMore && (
         <div className="mt-12 text-center">
-          <Button variant="outline" size="lg" onClick={loadMore}>
+          <Button variant="secondary" size="lg" onClick={loadMore}>
             Carregar mais
           </Button>
         </div>
