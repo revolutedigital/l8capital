@@ -141,7 +141,7 @@ export function TabsTrigger({ children, value, className }: TabsTriggerProps) {
       tabIndex={isActive ? 0 : -1}
       onClick={() => setActiveTab(value)}
       className={cn(
-        'relative px-4 py-2 text-sm font-medium rounded-md',
+        'relative px-4 py-2 text-sm font-medium rounded-xl',
         'transition-all duration-200',
         'focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2',
         isActive
@@ -153,7 +153,7 @@ export function TabsTrigger({ children, value, className }: TabsTriggerProps) {
       {isActive && (
         <motion.div
           layoutId="activeTab"
-          className="absolute inset-0 bg-gray-200 dark:bg-white/20 rounded-md shadow-sm"
+          className="absolute inset-0 bg-gray-200 dark:bg-white/20 rounded-xl shadow-sm"
           transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
         />
       )}
