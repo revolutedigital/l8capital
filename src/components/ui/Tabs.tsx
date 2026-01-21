@@ -7,6 +7,7 @@ import {
   useContext,
   useRef,
   useCallback,
+  useId,
   Children,
   isValidElement,
   cloneElement,
@@ -21,6 +22,7 @@ interface TabsContextType {
   setActiveTab: (value: string) => void
   tabValues: string[]
   registerTab: (value: string) => void
+  tabsId: string
 }
 
 const TabsContext = createContext<TabsContextType | undefined>(undefined)
@@ -34,13 +36,14 @@ interface TabsProps {
 export function Tabs({ children, defaultValue, className }: TabsProps) {
   const [activeTab, setActiveTab] = useState(defaultValue)
   const [tabValues, setTabValues] = useState<string[]>([])
+  const tabsId = useId()
 
   const registerTab = useCallback((value: string) => {
     setTabValues((prev) => (prev.includes(value) ? prev : [...prev, value]))
   }, [])
 
   return (
-    <TabsContext.Provider value={{ activeTab, setActiveTab, tabValues, registerTab }}>
+    <TabsContext.Provider value={{ activeTab, setActiveTab, tabValues, registerTab, tabsId }}>
       <div className={className}>{children}</div>
     </TabsContext.Provider>
   )
@@ -123,7 +126,7 @@ export function TabsTrigger({ children, value, className }: TabsTriggerProps) {
   const context = useContext(TabsContext)
   if (!context) throw new Error('TabsTrigger must be used within Tabs')
 
-  const { activeTab, setActiveTab, registerTab } = context
+  const { activeTab, setActiveTab, registerTab, tabsId } = context
   const isActive = activeTab === value
 
   // Register this tab value on mount
@@ -152,7 +155,7 @@ export function TabsTrigger({ children, value, className }: TabsTriggerProps) {
     >
       {isActive && (
         <motion.div
-          layoutId="activeTab"
+          layoutId={`activeTab-${tabsId}`}
           className="absolute inset-0 bg-gray-200 dark:bg-white/20 rounded-xl shadow-sm"
           transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
         />
