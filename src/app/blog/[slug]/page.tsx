@@ -153,7 +153,7 @@ export default async function BlogPostPage({ params }: Props) {
               </Link>
 
               <div className="mb-6">
-                <Badge>{post.category}</Badge>
+                <Badge className="dark:bg-[#745C18] dark:text-white">{post.category}</Badge>
               </div>
 
               <h1 className="heading-1 text-gray-900 dark:text-white mb-6">{post.title}</h1>
@@ -219,7 +219,7 @@ export default async function BlogPostPage({ params }: Props) {
                   receita, reduzir custos e eliminar carga operacional.
                 </p>
                 <Link href="/#contato">
-                  <Button size="sm">Agendar conversa gratuita</Button>
+                  <Button size="sm" variant="accent">Agendar conversa gratuita</Button>
                 </Link>
               </Card>
             </div>
