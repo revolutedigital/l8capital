@@ -170,6 +170,7 @@ export default function RootLayout({
               }
               .preloader-hidden {
                 opacity: 0 !important;
+                visibility: hidden !important;
                 pointer-events: none !important;
               }
             `,
@@ -184,7 +185,6 @@ export default function RootLayout({
                     var p = document.getElementById('instant-preloader');
                     if (p) {
                       p.classList.add('preloader-hidden');
-                      setTimeout(function() { p.remove(); }, 150);
                     }
                   }, 100);
                 };
