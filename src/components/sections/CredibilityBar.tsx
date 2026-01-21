@@ -96,7 +96,7 @@ export function CredibilityBar() {
               <div className="absolute inset-0 bg-white/5 rounded-2xl" />
               <div className="relative py-4">
                 <div className="text-4xl md:text-5xl font-bold text-accent-400 mb-2">
-                  <AnimatedNumber value={stat.number} prefix={stat.prefix} suffix={stat.suffix} />
+                  <AnimatedNumber value={stat.number} suffix={stat.suffix} />
                 </div>
                 <p className="text-white font-semibold text-lg">{stat.label}</p>
                 <p className="text-secondary-300 text-sm">{stat.sublabel}</p>
