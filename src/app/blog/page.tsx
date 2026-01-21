@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllPosts, getFeaturedPosts, getAllCategories } from '@/lib/blog/posts'
 import { Card, Badge, Button } from '@/components/ui'
+import { PostList } from '@/components/blog'
 import { Clock, ArrowRight, Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -90,40 +91,29 @@ export default function BlogPage() {
       <section className="py-16">
         <div className="container-custom">
           <h2 className="heading-3 text-gray-900 dark:text-white mb-8">Todos os Artigos</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`}>
-                <Card hoverable className="h-full flex flex-col">
-                  <Badge className="mb-4 w-fit">{post.category}</Badge>
-                  <h3 className="heading-4 text-gray-900 dark:text-white mb-3 hover:text-primary-600 transition-colors flex-grow">
-                    {post.title}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-4 line-clamp-2">
-                    {post.description}
-                  </p>
-                  <div className="flex items-center justify-between text-sm text-gray-500 mt-auto pt-4 border-t border-gray-100 dark:border-gray-700">
-                    <span className="flex items-center gap-1">
-                      <Clock className="h-4 w-4" />
-                      {post.readingTime} min
-                    </span>
-                    <span className="text-primary-600 flex items-center gap-1">
-                      Ler artigo <ArrowRight className="h-4 w-4" />
-                    </span>
-                  </div>
-                </Card>
-              </Link>
-            ))}
-          </div>
+          <PostList posts={posts} postsPerPage={30} />
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary-600">
-        <div className="container-custom text-center">
+      <section className="relative py-16 overflow-hidden">
+        {/* Background - Premium Black */}
+        <div className="absolute inset-0 bg-primary-900" />
+        <div
+          className="absolute inset-0 opacity-80"
+          style={{
+            backgroundImage: `url("/images/logos/bg_numeros_01.webp")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
+
+        <div className="container-custom text-center relative z-10">
           <h2 className="heading-2 text-white mb-4">
             Quer receber conteúdo exclusivo?
           </h2>
-          <p className="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-secondary-300 text-lg mb-8 max-w-2xl mx-auto">
             Agende uma conversa e descubra como a L8 pode ajudar sua imobiliária a crescer.
           </p>
           <Link href="/#contato">

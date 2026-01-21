@@ -146,13 +146,13 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="max-w-3xl mx-auto">
               <Link
                 href="/blog"
-                className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-6"
+                className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-8"
               >
                 <ArrowLeft className="h-4 w-4" />
                 Voltar ao Blog
               </Link>
 
-              <Badge className="mb-4">{post.category}</Badge>
+              <Badge className="mb-6">{post.category}</Badge>
 
               <h1 className="heading-1 text-gray-900 dark:text-white mb-6">{post.title}</h1>
 
@@ -265,9 +265,12 @@ export default async function BlogPostPage({ params }: Props) {
 }
 
 function formatContent(content: string): string {
+  // Remover seção TL;DR
+  let processedContent = content.replace(/^## TL;DR[\s\S]*?(?=^---$|^## )/gm, '')
+
   // Converter markdown básico para HTML
   // Em produção, usar um parser como remark/rehype
-  return content
+  return processedContent
     .replace(/^## (.*$)/gim, '<h2>$1</h2>')
     .replace(/^### (.*$)/gim, '<h3>$1</h3>')
     .replace(/^> \*\*(.*?)\*\* (.*$)/gim, '<blockquote><strong>$1</strong> $2</blockquote>')
