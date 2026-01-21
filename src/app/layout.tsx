@@ -86,6 +86,21 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0A0A0A" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+        {/* Critical CSS inline for instant first paint - prevents render blocking */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              *,*::before,*::after{box-sizing:border-box}
+              html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+              body{margin:0;font-family:var(--font-inter),system-ui,-apple-system,sans-serif;background:#fff;color:#0A0A0A;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+              .dark body{background:#0A0A0A;color:#FAFAF8}
+              .font-body{font-family:var(--font-inter),system-ui,sans-serif}
+              .font-display{font-family:var(--font-jakarta),system-ui,sans-serif}
+              .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+              #instant-preloader{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#1A1A1A 0%,#0A0A0A 100%)}
+            `,
+          }}
+        />
         {/* Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
