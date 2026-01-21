@@ -70,14 +70,14 @@ export function Hero() {
 
             {/* H1 - LCP element - NO animation to improve LCP score */}
             <h1 className="heading-1 text-primary-900 dark:text-white mb-6">
-              Imobiliárias parceiras economizam{' '}
+              Sua imobiliária com{' '}
               <span className="relative inline-block">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
-                  R$ {STATS.savings}
+                  mais receita
                 </span>
                 <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-accent-500 to-secondary-500 rounded-full" />
               </span>{' '}
-              /mês em boletos.
+              e menos custo operacional.
             </h1>
 
             <motion.p
@@ -86,7 +86,7 @@ export function Hero() {
               transition={{ ...fast, delay: 0.15 }}
               className="body-large text-secondary-600 dark:text-secondary-300 mb-10 max-w-xl"
             >
-              {`Tecnologia própria + ${STATS.experience} anos de experiência em seguros = mais dinheiro no seu caixa e menos trabalho operacional.`}
+              Seguros, banking e capacitação com tecnologia própria e {STATS.experience} anos de experiência. Você foca em vender e alugar — a gente cuida do resto.
             </motion.p>
 
             <motion.div
@@ -120,8 +120,8 @@ export function Hero() {
             >
               {[
                 { text: 'Sem mensalidade fixa', icon: Check },
-                { text: 'Análise gratuita', icon: Shield },
-                { text: 'Resultados em 30 dias', icon: Zap },
+                { text: 'Diagnóstico gratuito', icon: Shield },
+                { text: `${STATS.experience} anos de mercado`, icon: Zap },
               ].map((i) => (
                 <div key={i.text} className="flex items-center gap-3 text-secondary-600 dark:text-secondary-300">
                   <div className="w-8 h-8 rounded-xl bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center">
@@ -178,8 +178,8 @@ export function Hero() {
                 <div className="flex items-center gap-3">
                   <Shield className="w-9 h-9 text-accent-400" />
                   <div>
-                    <p className="font-bold text-xl">{STATS.experience} anos</p>
-                    <p className="text-xs text-secondary-300">de experiência</p>
+                    <p className="font-bold text-xl">{STATS.experience}</p>
+                    <p className="text-xs text-secondary-300">anos de experiência</p>
                   </div>
                 </div>
               </div>

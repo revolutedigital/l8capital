@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
 
 export const STATS = {
   agencies: '400+',
-  experience: '24',
+  experience: '+20',
   savings: '2.050',
   technology: '100%',
 }
