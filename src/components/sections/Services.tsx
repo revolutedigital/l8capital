@@ -117,12 +117,21 @@ export function Services() {
                             </div>
 
                             {/* Content */}
-                            <h3 className="text-lg font-bold text-primary-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-accent-400 transition-colors">
-                              {service.title}
-                            </h3>
-                            <p className="text-secondary-600 dark:text-secondary-400 text-sm leading-relaxed">
-                              {service.description}
-                            </p>
+                            <div className="flex items-center gap-2 mb-2">
+                              <h3 className="text-lg font-bold text-primary-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-accent-400 transition-colors">
+                                {service.title}
+                              </h3>
+                              {'comingSoon' in service && service.comingSoon && (
+                                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400">
+                                  Em Breve
+                                </span>
+                              )}
+                            </div>
+                            {service.description && (
+                              <p className="text-secondary-600 dark:text-secondary-400 text-sm leading-relaxed">
+                                {service.description}
+                              </p>
+                            )}
 
                             {/* Hover indicator */}
                             <div className={`mt-4 h-0.5 w-0 group-hover:w-12 bg-gradient-to-r ${colors.bg} rounded-full transition-all duration-300`} />

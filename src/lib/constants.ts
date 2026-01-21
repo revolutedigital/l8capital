@@ -25,34 +25,34 @@ export const SERVICES = {
   seguros: [
     {
       title: 'Seguro Incêndio',
-      description: 'Obrigatório por lei. Com a L8, além de proteção, você ganha comissão mensal enquanto o contrato estiver ativo. Não é venda única — é receita recorrente.',
+      description: 'Obrigatório por lei. Com a L8, além de proteção, você ganha previsibilidade de receita. Não é receita única — é receita recorrente.',
       icon: 'shield-check',
     },
     {
       title: 'Seguro Fiança',
-      description: 'A garantia locatícia mais completa. Aprovação em até 72 horas, cobertura ampla, menos inadimplência na sua carteira.',
+      description: 'A garantia locatícia mais completa. Aprovação online, coberturas amplas, menos inadimplência e mais locações realizadas.',
       icon: 'file-check',
     },
     {
       title: 'Capitalização',
-      description: 'Alternativa moderna ao calção tradicional. Seu inquilino guarda dinheiro (e ainda pode ser sorteado), você tem a garantia.',
+      description: 'Alternativa moderna, onde seu inquilino aplica o dinheiro (e ainda pode ser sorteado) e o proprietário tem garantia no contrato.',
       icon: 'piggy-bank',
     },
   ],
   financeiro: [
     {
       title: 'Redução de Boletagem',
-      description: 'De R$ 6,00 para R$ 1,90 por boleto. Fazemos a negociação em volume e repassamos a economia. 500 boletos = R$ 2.050/mês no seu caixa.',
+      description: '',
       icon: 'receipt',
     },
     {
       title: 'Rentabilização de Float',
-      description: 'O dinheiro que fica na sua conta entre o pagamento do inquilino e o repasse ao proprietário pode render. Por que deixar parado?',
+      description: '',
       icon: 'trending-up',
     },
     {
       title: 'Gestão de Fundo de Reserva',
-      description: 'Para administradoras: transforme o fundo de reserva dos seus condomínios em investimento que rende mais que poupança.',
+      description: '',
       icon: 'wallet',
     },
   ],
@@ -71,6 +71,7 @@ export const SERVICES = {
       title: 'Vistoria de Imóveis',
       description: 'Parceiro especializado com condições exclusivas para imobiliárias da rede L8.',
       icon: 'clipboard-check',
+      comingSoon: true,
     },
   ],
 }
