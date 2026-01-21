@@ -79,27 +79,23 @@ export const SERVICES = {
 export const FAQ_ITEMS = [
   {
     question: 'Quanto custa para começar?',
-    answer: 'A análise inicial é 100% gratuita. Depois, trabalhamos com modelo de parceria: você só tem custo se tiver ganho primeiro. Diferente de consultorias que cobram antes de entregar, a L8 aposta junto com você. Sem mensalidade fixa obrigatória.',
-  },
-  {
-    question: 'Já tenho parceiro de seguros. Por que mudar?',
-    answer: 'Não pedimos que você mude. Pedimos 30 minutos para mostrar os números. Se sua operação atual for melhor que a nossa, você continua com ela — e ainda sai da reunião com insights gratuitos sobre onde pode melhorar. Se a nossa for melhor, você decide.',
+    answer: 'A análise inicial é 100% gratuita. E você só terá aumento de receita. Diferente de consultorias que cobram antes de entregar, a L8 aposta junto com você. Sem mensalidade fixa obrigatória.',
   },
   {
     question: 'Quanto tempo para ver resultados?',
-    answer: 'A economia em boletos aparece no primeiro mês. Ganhos com seguros começam a partir do segundo mês, quando as primeiras apólices são emitidas. Em 90 dias, você tem visão clara do retorno.',
+    answer: 'A economia pode ser instantânea, vai só depender da sua volumetria. Ganhos com seguros, por exemplo, começam no segundo mês, já que as primeiras apólices são emitidas no primeiro mês. Em 90 dias, você tem visão clara do retorno.',
   },
   {
     question: 'Vocês atendem imobiliárias de qualquer tamanho?',
-    answer: 'Nosso modelo funciona melhor para imobiliárias com pelo menos 50 imóveis administrados. Se você tem menos, ainda podemos conversar — às vezes a oportunidade está em serviços específicos como redução de boletagem.',
+    answer: 'Nosso modelo funciona para todas as imobiliárias, pois a tecnologia é própria e reduz operacional da Imobiliária. Além disso temos um time especializado para te apoiar nessa análise e posteriormente em todo o processo.',
   },
   {
     question: 'Como funciona a economia em boletos?',
-    answer: 'Simples: negociamos em volume com processadores de pagamento. Quanto mais imobiliárias na rede, melhor a taxa para todos. Hoje conseguimos R$ 1,90 por boleto (versus R$ 6,00 do mercado). Com mais volume, nossa meta é chegar a R$ 1,00.',
+    answer: 'Simples: negociamos em volume com processadores de pagamento, o que nos permite ter uma tarifa e taxa bem competitiva. Além disso podemos conversar sobre antecipação de recebíveis e fluxo de caixa.',
   },
   {
     question: 'O que significa "modelo validado em 400 imobiliárias"?',
-    answer: 'No Centro-Oeste, nosso parceiro estratégico já opera com a mesma tecnologia e modelo de negócio há anos. São mais de 400 imobiliárias usando a solução no dia a dia. Não estamos testando algo novo. Estamos trazendo para São Paulo algo que já funciona.',
+    answer: 'No Centro-Oeste, nosso parceiro estratégico, Alugue sem Fiador, já opera com a mesma tecnologia e modelo de negócio há anos. São mais de 400 imobiliárias utilizando nossa plataforma no dia a dia. Não estamos testando algo novo. Estamos trazendo para São Paulo algo que já funciona.',
   },
   {
     question: 'Como vocês tratam os dados dos clientes? Estão em conformidade com a LGPD?',
