@@ -102,7 +102,7 @@ Sim, a maioria das apólices inclui cobertura para danos ao imóvel até determi
     slug: 'como-reduzir-taxa-boleto-imobiliaria',
     title: 'Como Reduzir Taxa de Boleto na Imobiliária: Guia Prático',
     description:
-      'Descubra como imobiliárias estão economizando até R$ 2.050/mês reduzindo a taxa de boleto de R$ 6 para R$ 1,90.',
+      'Descubra como imobiliárias estão reduzindo significativamente os custos com boletos através de negociação em volume e parceiros especializados.',
     content: `
 ## Por que os boletos custam tanto?
 
@@ -128,13 +128,7 @@ Bancos tradicionais cobram taxas elevadas porque:
 
 ## O modelo L8 Capital
 
-A L8 Capital utiliza a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Centro-Oeste através do nosso parceiro estratégico [Alugue sem Fiador](https://aluguesemfiador.net). Esse volume consolidado nos permite negociar taxas muito mais competitivas:
-
-| Situação | Taxa por Boleto | 500 boletos/mês |
-|----------|-----------------|-----------------|
-| Mercado | R$ 6,00 | R$ 3.000/mês |
-| L8 Capital | R$ 1,90 | R$ 950/mês |
-| **Economia** | **R$ 4,10** | **R$ 2.050/mês** |
+A L8 Capital utiliza a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Centro-Oeste através do nosso parceiro estratégico [Alugue sem Fiador](https://aluguesemfiador.net). Esse volume consolidado nos permite negociar taxas muito mais competitivas do que você conseguiria sozinho.
 
 A economia pode ser instantânea e vai depender da sua volumetria. Além disso, podemos conversar sobre antecipação de recebíveis e fluxo de caixa.
 
@@ -167,11 +161,9 @@ Na prática, a maioria dos contratos de locação transfere a responsabilidade d
 
 ## Quanto custa o seguro incêndio?
 
-| Valor do Imóvel | Prêmio Anual Aproximado |
-|-----------------|------------------------|
-| R$ 200.000 | R$ 200 a R$ 600 |
-| R$ 500.000 | R$ 500 a R$ 1.500 |
-| R$ 1.000.000 | R$ 1.000 a R$ 3.000 |
+O valor do prêmio do seguro incêndio varia conforme o valor do imóvel, localização e coberturas escolhidas. Geralmente representa uma fração pequena do valor do aluguel anual, tornando-se um investimento acessível tanto para proprietários quanto para inquilinos.
+
+Para saber o valor exato para os imóveis da sua carteira, [fale conosco](/#contato) e faremos uma simulação personalizada.
 
 ---
 
