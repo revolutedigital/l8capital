@@ -62,20 +62,15 @@ export function Problems() {
             <span className="text-sm font-semibold">Problemas que Resolvemos</span>
           </motion.div>
 
-          <h2 id="problems-heading" className="heading-2 text-primary-900 dark:text-white mb-4">
+          <h2 id="problems-heading" className="heading-2 text-primary-900 dark:text-white">
             <TextReveal variant="slideUp">
               Você enfrenta esses desafios?
             </TextReveal>
           </h2>
-          <p className="body-large text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
-            <TextReveal variant="wordByWord" delay={0.3} staggerChildren={0.03}>
-              Se sim, você não está sozinho. A maioria das imobiliárias brasileiras passa por isso.
-            </TextReveal>
-          </p>
         </FadeInOnScroll>
 
         {/* Problems Grid - Tablet gets 2 cols, Desktop gets 3 */}
-        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16" staggerDelay={0.15}>
+        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-10" staggerDelay={0.15}>
           {PROBLEMS.map((problem, index) => {
             const colors = problemColors[index]
             const Icon = problemIcons[problem.icon] || IconMarginProblem
@@ -124,6 +119,15 @@ export function Problems() {
             )
           })}
         </StaggerContainer>
+
+        {/* Paragraph after problems */}
+        <FadeInOnScroll className="text-center mb-16">
+          <p className="body-large text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
+            <TextReveal variant="wordByWord" delay={0.3} staggerChildren={0.03}>
+              Se sim, você não está sozinho. A maioria das imobiliárias brasileiras passa por isso.
+            </TextReveal>
+          </p>
+        </FadeInOnScroll>
 
         {/* Arrow to Solution */}
         <FadeInOnScroll delay={0.6}>
