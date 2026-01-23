@@ -129,7 +129,7 @@ export const PROBLEMS = [
 export const VALUE_PROPS = [
   {
     title: 'Aumentar Receita',
-    description: 'Comissões de seguros e consórcio que você já oferece, mas ganha pouco. Rentabilização do dinheiro em trânsito na sua conta.',
+    description: 'Seguros e consórcios deixam de ser "extra" e passam a gerar previsibilidade de caixa. Mais receita, sem depender de novas locações.',
     icon: 'trending-up',
     highlight: true,
   },
@@ -141,7 +141,7 @@ export const VALUE_PROPS = [
   },
   {
     title: 'Eliminar Operacional',
-    description: 'Gestão automatizada de apólices, cobranças integradas. Sua equipe livre para alugar.',
+    description: 'Tecnologia própria + time humano especializado cuidando do que hoje trava sua operação.',
     icon: 'cpu',
     highlight: false,
   },

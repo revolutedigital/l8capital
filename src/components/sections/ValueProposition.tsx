@@ -52,10 +52,11 @@ export function ValueProposition() {
           </div>
 
           <h2 className="heading-2 text-white mb-6">
-            A L8 existe para fazer sua{' '}
+            A L8 existe para{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-400 to-accent-500">
-              imobiliária mais forte
-            </span>
+              fortalecer financeiramente
+            </span>{' '}
+            a sua imobiliária.
           </h2>
           <p className="body-large text-primary-100 max-w-2xl mx-auto">
             Todo serviço que oferecemos passa por um filtro simples: aumenta receita, reduz custo ou

@@ -35,7 +35,7 @@ export function HowItWorks() {
           className="text-center mb-16"
         >
           <span className="inline-block text-sm font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wider mb-4">
-            Como Começar
+            Começar é simples
           </span>
           <h2 className="heading-2 text-primary-900 dark:text-white mb-4">
             Três passos para começar
@@ -115,10 +115,10 @@ export function HowItWorks() {
         >
           <div className="bg-white dark:bg-primary-800 rounded-3xl p-8 md:p-12 shadow-xl border border-secondary-100 dark:border-primary-700 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold text-primary-900 dark:text-white mb-4">
-              Pronto para começar?
+              Quer saber quanto sua imobiliária pode ganhar e economizar?
             </h3>
             <p className="text-secondary-600 dark:text-secondary-400 mb-8">
-              Agende uma conversa gratuita e descubra quanto sua imobiliária pode economizar.
+              Agende uma conversa gratuita e veja, com dados reais, se o modelo da L8 faz sentido para a sua operação.
             </p>
 
             <Link href="/#contato">
