@@ -114,16 +114,20 @@ export function CredibilityBar() {
           transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : 0.4 }}
           className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16"
         >
-          {partners.map((partner) => (
+          {partners.map((partner, index) => (
             <div
               key={partner.name}
-              className="h-12 w-28 md:h-14 md:w-32 grayscale brightness-200 opacity-80 hover:grayscale-0 hover:brightness-100 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
+              className={`grayscale brightness-200 opacity-80 hover:grayscale-0 hover:brightness-100 hover:opacity-100 transition-all duration-300 flex items-center justify-center ${
+                index === 0
+                  ? 'h-[62px] w-[146px] md:h-[73px] md:w-[166px]'
+                  : 'h-[58px] w-[134px] md:h-[67px] md:w-[154px]'
+              }`}
             >
               <Image
                 src={partner.logo}
                 alt={partner.name}
-                width={120}
-                height={48}
+                width={index === 0 ? 166 : 154}
+                height={index === 0 ? 73 : 67}
                 loading="lazy"
                 className="object-contain w-auto h-full max-w-full"
               />
