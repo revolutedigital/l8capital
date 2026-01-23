@@ -69,7 +69,7 @@ export function Hero() {
             </motion.div>
 
             {/* H1 - LCP element - NO animation to improve LCP score */}
-            <h1 className="text-primary-900 dark:text-white mb-6 font-display font-bold leading-tight" style={{ fontSize: '2.4rem' }}>
+            <h1 className="text-primary-900 dark:text-white mb-6 font-display font-bold leading-tight text-[1.85rem] md:text-[2.4rem]">
               Sua imobiliária com{' '}
               <span className="relative inline-block">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
