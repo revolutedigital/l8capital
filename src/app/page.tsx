@@ -6,6 +6,7 @@ import {
   Services,
   Differentiator,
   Validation,
+  AboutUs,
   Testimonials,
   HowItWorks,
   FAQ,
@@ -24,6 +25,7 @@ export default function Home() {
       <Services />
       <Differentiator />
       <Validation />
+      <AboutUs />
       <Testimonials />
       <HowItWorks />
       <FAQ />
