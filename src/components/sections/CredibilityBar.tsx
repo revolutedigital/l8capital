@@ -6,10 +6,10 @@ import { useRef, useEffect, useState } from 'react'
 import { useReducedMotion } from '@/hooks'
 
 const stats = [
-  { number: 400, suffix: '+', label: 'Imobiliárias', sublabel: 'parceiras' },
-  { number: 20, suffix: '+', label: 'Anos', sublabel: 'de experiência' },
-  { number: 20, suffix: '+', label: 'Especialistas', sublabel: 'no seu suporte' },
-  { number: 100, suffix: '%', label: 'Tecnologia', sublabel: 'própria' },
+  { number: 400, prefix: '+', suffix: '', label: 'Imobiliárias parceiras', sublabel: '(via Alugue Sem Fiador, parceiro estratégico)' },
+  { number: 20, prefix: '+', suffix: '', label: 'anos de experiência', sublabel: 'no mercado de seguros' },
+  { number: 20, prefix: '+', suffix: '', label: 'especialistas atuando', sublabel: 'no backoffice operacional' },
+  { number: 100, prefix: '', suffix: '%', label: 'Tecnologia própria', sublabel: 'integrada à rotina imobiliária' },
 ]
 
 const partners = [
@@ -88,12 +88,12 @@ export function CredibilityBar() {
               className="text-center relative"
             >
               <div className="absolute inset-0 bg-white/5 rounded-2xl" />
-              <div className="relative py-4">
-                <div className="text-4xl md:text-5xl font-bold text-accent-400 mb-2">
-                  <AnimatedNumber value={stat.number} suffix={stat.suffix} />
+              <div className="relative py-4 px-2">
+                <div className="text-4xl md:text-5xl font-bold text-accent-400 mb-1">
+                  <AnimatedNumber value={stat.number} prefix={stat.prefix} suffix={stat.suffix} />
                 </div>
-                <p className="text-white font-semibold text-lg">{stat.label}</p>
-                <p className="text-secondary-300 text-sm">{stat.sublabel}</p>
+                <p className="text-white font-semibold text-base leading-tight">{stat.label}</p>
+                <p className="text-secondary-400 text-xs mt-1">{stat.sublabel}</p>
               </div>
             </motion.div>
           ))}
@@ -139,7 +139,7 @@ export function CredibilityBar() {
           transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : 0.5 }}
           className="text-center text-secondary-300 mt-10 text-lg"
         >
-          Solução validada em <span className="font-semibold text-white">+400 imobiliárias</span> no Brasil.{' '}
+          Modelo validado em <span className="font-semibold text-white">mais de 400 imobiliárias</span> no Brasil com o Alugue Sem Fiador.{' '}
           <span className="text-accent-400 font-semibold">Agora chegando a São Paulo.</span>
         </motion.p>
       </div>

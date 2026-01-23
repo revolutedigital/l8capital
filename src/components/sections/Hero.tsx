@@ -73,21 +73,23 @@ export function Hero() {
               Sua imobiliária com{' '}
               <span className="relative inline-block">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
-                  mais receita
+                  mais receita recorrente
                 </span>
                 <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-accent-500 to-secondary-500 rounded-full" />
               </span>{' '}
               e menos custo operacional.
             </h1>
 
-            <motion.p
+            <motion.div
               initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...fast, delay: 0.15 }}
-              className="body-large text-secondary-600 dark:text-secondary-300 mb-10 max-w-xl"
+              className="text-secondary-600 dark:text-secondary-300 mb-10 max-w-xl"
+              style={{ fontSize: '1rem', lineHeight: '1.6' }}
             >
-              Seguros, banking e capacitação com tecnologia própria e {STATS.experience} anos de experiência. Você foca em vender e alugar — a gente cuida do resto.
-            </motion.p>
+              <p className="mb-2">Sem aumentar o time, sem aumentar o risco e sem complicar a operação.</p>
+              <p>A L8 ajuda imobiliárias a aumentarem receita, reduzirem custos e tirarem o peso do operacional, usando seguros, soluções financeiras e um time especializado que trabalha por você.</p>
+            </motion.div>
 
             <motion.div
               initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
@@ -102,7 +104,7 @@ export function Hero() {
                   rightIcon={<ArrowRight className="h-5 w-5" />}
                   className="whitespace-nowrap"
                 >
-                  Agendar Reunião Gratuita
+                  Agendar Conversa Gratuita
                 </Button>
               </Link>
               <Link href="/#como-funciona">
@@ -116,18 +118,18 @@ export function Hero() {
               initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...fast, delay: 0.25 }}
-              className="flex flex-wrap gap-x-8 gap-y-4"
+              className="flex flex-wrap gap-x-4 gap-y-3"
             >
               {[
                 { text: 'Sem mensalidade fixa', icon: Check },
-                { text: 'Diagnóstico gratuito', icon: Shield },
+                { text: 'Diagnóstico financeiro gratuito', icon: Shield },
                 { text: `${STATS.experience} anos de mercado`, icon: Zap },
               ].map((i) => (
-                <div key={i.text} className="flex items-center gap-3 text-secondary-600 dark:text-secondary-300">
-                  <div className="w-8 h-8 rounded-xl bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center">
-                    <i.icon className="h-4 w-4 text-accent-600 dark:text-accent-400" aria-hidden="true" />
+                <div key={i.text} className="flex items-center gap-2 text-secondary-600 dark:text-secondary-300">
+                  <div className="w-6 h-6 rounded-lg bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center">
+                    <i.icon className="h-3 w-3 text-accent-600 dark:text-accent-400" aria-hidden="true" />
                   </div>
-                  <span className="text-sm font-medium">{i.text}</span>
+                  <span className="text-xs font-medium">{i.text}</span>
                 </div>
               ))}
             </motion.div>
