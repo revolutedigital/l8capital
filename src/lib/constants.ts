@@ -110,18 +110,18 @@ export const FAQ_ITEMS = [
 
 export const PROBLEMS = [
   {
-    title: 'Margem Apertada',
-    description: 'Boletos, seguros, comissões, taxas que só aumentam. No final do mês, o que sobra é cada vez menos.',
+    title: 'Margem cada vez menor',
+    description: 'Boletos, seguros, taxas, comissões. O faturamento gira, mas o lucro encolhe.',
     icon: 'piggy-bank',
   },
   {
-    title: 'Tempo Perdido',
-    description: 'Sua equipe gasta horas com operacional que não gera negócio novo. Enquanto isso, imóveis esperam para ser alugados.',
+    title: 'Equipe sobrecarregada',
+    description: 'Horas gastas com operacional que não gera novas locações nem novas vendas.',
     icon: 'clock',
   },
   {
-    title: 'Difícil se Diferenciar',
-    description: 'Portais, franquias, novos modelos. Todo mundo oferece a mesma coisa. Como mostrar que você é diferente?',
+    title: 'Tudo parece igual',
+    description: 'Portais, franquias, discursos parecidos. O cliente não vê diferença — só preço.',
     icon: 'users',
   },
 ]

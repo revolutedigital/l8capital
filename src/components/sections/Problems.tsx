@@ -124,7 +124,7 @@ export function Problems() {
         <FadeInOnScroll className="text-center mb-16">
           <p className="body-large text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
             <TextReveal variant="wordByWord" delay={0.3} staggerChildren={0.03}>
-              Se sim, você não está sozinho. A maioria das imobiliárias brasileiras passa por isso.
+              Se isso soa familiar, o problema não é a sua imobiliária. É o modelo.
             </TextReveal>
           </p>
         </FadeInOnScroll>
