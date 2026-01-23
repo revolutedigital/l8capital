@@ -54,7 +54,7 @@ export function AboutUs() {
             {/* Main heading */}
             <h2
               id="about-heading"
-              className="text-3xl md:text-4xl font-bold text-primary-900 dark:text-white mb-6 leading-tight"
+              className="heading-2 text-primary-900 dark:text-white mb-6"
             >
               A L8 Capital nasceu para resolver um problema{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
@@ -120,15 +120,20 @@ export function AboutUs() {
                 <div className="flex items-center gap-6">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
                     <Image
-                      src="/images/logos/l8-logo-v2.webp"
+                      src="/images/logos/l8-logo_transp_branco.webp"
                       alt="L8 Capital"
                       width={80}
                       height={80}
-                      className="h-12 w-auto object-contain brightness-0 invert"
+                      className="h-12 w-auto object-contain"
                     />
                   </div>
                   <div className="text-2xl text-accent-400 font-light">+</div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                  <a
+                    href="https://aluguesemfiador.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-colors"
+                  >
                     <Image
                       src="/images/logos/parceiro2.webp"
                       alt="ASF - Alugue sem Fiador"
@@ -136,7 +141,7 @@ export function AboutUs() {
                       height={80}
                       className="h-12 w-auto object-contain brightness-0 invert"
                     />
-                  </div>
+                  </a>
                 </div>
               </div>
 
@@ -179,22 +184,6 @@ export function AboutUs() {
                 </div>
               </div>
             </div>
-
-            {/* Floating card */}
-            <motion.div
-              initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : 0.4 }}
-              className="absolute -bottom-6 -left-6 md:-left-12 bg-white dark:bg-primary-800 rounded-2xl p-5 shadow-xl border border-secondary-100 dark:border-primary-700 max-w-[280px]"
-            >
-              <p className="text-secondary-700 dark:text-secondary-300 text-sm leading-relaxed">
-                <span className="font-semibold text-primary-900 dark:text-white">
-                  Somos o parceiro que entra para organizar o financeiro,
-                </span>{' '}
-                destravar o resultado e devolver foco ao dono da imobiliária.
-              </p>
-            </motion.div>
           </motion.div>
         </div>
       </div>
