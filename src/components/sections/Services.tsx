@@ -70,7 +70,7 @@ export function Services() {
             Soluções que fazem diferença no seu caixa
           </h2>
           <p className="body-large text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
-            Cada serviço foi pensado para resolver problemas reais de imobiliárias
+            Cada serviço foi pensado para resolver problemas reais de imobiliárias.
           </p>
         </motion.div>
 

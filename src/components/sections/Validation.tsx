@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button, Card } from '@/components/ui'
 import { STATS } from '@/lib/constants'
 import { Building2, Check, Cpu, Clock, BadgeCheck } from 'lucide-react'
@@ -28,6 +29,28 @@ export function Validation() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
+          {/* Partner Logos */}
+          <div className="flex justify-center items-center gap-8 md:gap-12 mb-8">
+            <div className="h-12 md:h-16">
+              <Image
+                src="/images/logos/l8-logo-v2.webp"
+                alt="L8 Capital"
+                width={64}
+                height={64}
+                className="h-full w-auto object-contain"
+              />
+            </div>
+            <div className="text-2xl text-secondary-300 dark:text-primary-600 font-light">+</div>
+            <div className="h-12 md:h-16">
+              <Image
+                src="/images/logos/parceiro2.webp"
+                alt="Alugue sem Fiador (ASF)"
+                width={120}
+                height={64}
+                className="h-full w-auto object-contain"
+              />
+            </div>
+          </div>
           <h2 id="validation-heading" className="heading-2 text-primary-900 dark:text-white">Solução validada no mercado</h2>
         </motion.div>
 

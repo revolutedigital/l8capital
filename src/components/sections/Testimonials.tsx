@@ -77,7 +77,7 @@ export function Testimonials() {
             O que nossos parceiros dizem
           </h2>
           <p className="body-large text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
-            Imobiliárias que já transformaram suas operações com nossa tecnologia
+            Imobiliárias que já transformaram suas operações com nossa tecnologia.
           </p>
         </motion.div>
 
@@ -155,7 +155,7 @@ export function Testimonials() {
           className="text-center mt-12"
         >
           <p className="text-secondary-500 dark:text-secondary-400">
-            Junte-se a <span className="font-semibold text-primary-600 dark:text-accent-400">+400 imobiliárias</span> que já confiam na nossa tecnologia
+            Junte-se a <span className="font-semibold text-primary-600 dark:text-accent-400">+400 imobiliárias</span> que já confiam na nossa tecnologia.
           </p>
         </motion.div>
       </div>

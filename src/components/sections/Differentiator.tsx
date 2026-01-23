@@ -26,7 +26,7 @@ export function Differentiator() {
             Por que somos diferentes?
           </h2>
           <p className="body-large text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Compare e veja por que mais de 400 imobiliárias escolheram a nossa plataforma ASF
+            Compare e veja por que mais de 400 imobiliárias escolheram a nossa plataforma ASF.
           </p>
         </motion.div>
 

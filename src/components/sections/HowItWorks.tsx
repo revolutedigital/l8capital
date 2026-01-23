@@ -41,7 +41,7 @@ export function HowItWorks() {
             Três passos para começar
           </h2>
           <p className="body-large text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
-            Processo simples e sem burocracia para sua imobiliária crescer
+            Processo simples e sem burocracia para sua imobiliária crescer.
           </p>
         </motion.div>
 
@@ -118,7 +118,7 @@ export function HowItWorks() {
               Pronto para começar?
             </h3>
             <p className="text-secondary-600 dark:text-secondary-400 mb-8">
-              Agende uma conversa gratuita e descubra quanto sua imobiliária pode economizar
+              Agende uma conversa gratuita e descubra quanto sua imobiliária pode economizar.
             </p>
 
             <Link href="/#contato">
