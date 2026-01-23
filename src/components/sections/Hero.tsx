@@ -52,7 +52,7 @@ export function Hero() {
       <div className="absolute top-20 left-[10%] w-32 h-32 bg-accent-500/10 rounded-full blur-2xl" />
       <div className="absolute bottom-32 right-[15%] w-48 h-48 bg-primary-500/10 rounded-full blur-3xl" />
 
-      <div className="container-custom relative z-10 py-24 md:py-32 lg:py-40">
+      <div className="container-custom relative z-10 pt-32 pb-24 md:pt-32 md:pb-32 lg:pt-32 lg:pb-40">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
           <div className="max-w-2xl">
@@ -69,7 +69,7 @@ export function Hero() {
             </motion.div>
 
             {/* H1 - LCP element - NO animation to improve LCP score */}
-            <h1 className="heading-1 text-primary-900 dark:text-white mb-6">
+            <h1 className="text-primary-900 dark:text-white mb-6 font-display font-bold leading-tight" style={{ fontSize: '2.45rem' }}>
               Sua imobiliária com{' '}
               <span className="relative inline-block">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
@@ -85,7 +85,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...fast, delay: 0.15 }}
               className="text-secondary-600 dark:text-secondary-300 mb-10 max-w-xl"
-              style={{ fontSize: '1rem', lineHeight: '1.6' }}
+              style={{ fontSize: '0.9rem', lineHeight: '1.6' }}
             >
               <p className="mb-2">Sem aumentar o time, sem aumentar o risco e sem complicar a operação.</p>
               <p>A L8 ajuda imobiliárias a aumentarem receita, reduzirem custos e tirarem o peso do operacional, usando seguros, soluções financeiras e um time especializado que trabalha por você.</p>
@@ -118,18 +118,18 @@ export function Hero() {
               initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...fast, delay: 0.25 }}
-              className="flex flex-wrap gap-x-4 gap-y-3"
+              className="flex flex-wrap gap-x-3 gap-y-2"
             >
               {[
                 { text: 'Sem mensalidade fixa', icon: Check },
                 { text: 'Diagnóstico financeiro gratuito', icon: Shield },
                 { text: `${STATS.experience} anos de mercado`, icon: Zap },
               ].map((i) => (
-                <div key={i.text} className="flex items-center gap-2 text-secondary-600 dark:text-secondary-300">
-                  <div className="w-6 h-6 rounded-lg bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center">
-                    <i.icon className="h-3 w-3 text-accent-600 dark:text-accent-400" aria-hidden="true" />
+                <div key={i.text} className="flex items-center gap-1.5 text-secondary-600 dark:text-secondary-300">
+                  <div className="w-5 h-5 rounded bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center">
+                    <i.icon className="h-2.5 w-2.5 text-accent-600 dark:text-accent-400" aria-hidden="true" />
                   </div>
-                  <span className="text-xs font-medium">{i.text}</span>
+                  <span className="text-[11px] font-medium">{i.text}</span>
                 </div>
               ))}
             </motion.div>
