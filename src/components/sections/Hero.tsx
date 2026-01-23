@@ -69,7 +69,7 @@ export function Hero() {
             </motion.div>
 
             {/* H1 - LCP element - NO animation to improve LCP score */}
-            <h1 className="text-primary-900 dark:text-white mb-6 font-display font-bold leading-tight" style={{ fontSize: '2.45rem' }}>
+            <h1 className="text-primary-900 dark:text-white mb-6 font-display font-bold leading-tight" style={{ fontSize: '2.4rem' }}>
               Sua imobiliária com{' '}
               <span className="relative inline-block">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
@@ -102,13 +102,13 @@ export function Hero() {
                   variant="accent"
                   size="md"
                   rightIcon={<ArrowRight className="h-5 w-5" />}
-                  className="whitespace-nowrap"
+                  className="whitespace-nowrap text-[0.9rem]"
                 >
                   Agendar Conversa Gratuita
                 </Button>
               </Link>
               <Link href="/#como-funciona">
-                <Button variant="secondary" size="md" rightIcon={<ChevronDown className="h-5 w-5" />} className="whitespace-nowrap">
+                <Button variant="secondary" size="md" rightIcon={<ChevronDown className="h-5 w-5" />} className="whitespace-nowrap text-[0.9rem]">
                   Ver como funciona
                 </Button>
               </Link>
