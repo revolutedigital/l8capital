@@ -54,7 +54,7 @@ export function AboutUs() {
             {/* Main heading */}
             <h2
               id="about-heading"
-              className="heading-2 text-primary-900 dark:text-white mb-6"
+              className="text-[1.75rem] md:text-[2rem] font-display font-bold leading-tight text-primary-900 dark:text-white mb-6"
             >
               A L8 Capital nasceu para resolver um problema{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
