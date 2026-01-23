@@ -203,7 +203,7 @@ ${location.metadata.keyInsights.slice(0, 3).map((insight, idx) => `${idx + 1}. $
 
 ## Como a L8 Capital Atende ${location.name}
 
-A L8 Capital é uma plataforma digital de soluções financeiras para imobiliárias em São Paulo. Utilizamos a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Centro-Oeste através do nosso parceiro estratégico [Alugue sem Fiador](https://aluguesemfiador.net). Não estamos testando algo novo - estamos trazendo para São Paulo algo que já funciona.
+A L8 Capital é uma plataforma digital de soluções financeiras para imobiliárias em São Paulo. Utilizamos a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Brasil através do nosso parceiro estratégico [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net). Não estamos testando algo novo - estamos trazendo para São Paulo algo que já funciona.
 
 ### Diferenciais para Imobiliárias ${locationContext}
 
@@ -438,7 +438,7 @@ ${location.metadata.keyInsights.slice(1, 4).map((insight, idx) => `${idx + 1}. $
 
 ## Como a L8 Capital Ajuda Imobiliárias ${locationContext}
 
-A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net). Nosso modelo funciona para todas as imobiliárias, pois a tecnologia reduz o operacional.
+A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Brasil através do [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net). Nosso modelo funciona para todas as imobiliárias, pois a tecnologia reduz o operacional.
 
 ### Solução Completa para ${location.name}
 
@@ -680,7 +680,7 @@ ${
 
 ## Como a L8 Capital Ajuda ${locationContext}
 
-A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net). A capitalização é uma alternativa moderna, onde seu inquilino aplica o dinheiro (e ainda pode ser sorteado) e o proprietário tem garantia no contrato.
+A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Brasil através do [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net). A capitalização é uma alternativa moderna, onde seu inquilino aplica o dinheiro (e ainda pode ser sorteado) e o proprietário tem garantia no contrato.
 
 ### Solução Completa de Capitalização
 
@@ -861,7 +861,7 @@ ${
 
 ### Modelo L8 Capital
 
-A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net). A economia pode ser instantânea e vai depender da sua volumetria. Além disso, podemos conversar sobre antecipação de recebíveis e fluxo de caixa.
+A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Brasil através do [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net). A economia pode ser instantânea e vai depender da sua volumetria. Além disso, podemos conversar sobre antecipação de recebíveis e fluxo de caixa.
 
 **1. Conta Remunerada Automatizada**
 - Dinheiro entra → automaticamente aplicado
@@ -1209,7 +1209,7 @@ ${
 
 ## Como Funciona a Gestão L8
 
-A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net). Nosso modelo funciona para todas as imobiliárias, pois a tecnologia reduz o operacional e temos um time especializado para apoiar você em todo o processo.
+A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Brasil através do [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net). Nosso modelo funciona para todas as imobiliárias, pois a tecnologia reduz o operacional e temos um time especializado para apoiar você em todo o processo.
 
 ### Processo Completo
 
@@ -1448,7 +1448,7 @@ ${location.metadata.realEstateAgencies ? `\n### Contexto ${location.name}\n\nCom
 
 ## Metodologia L8 Capital
 
-A L8 Capital oferece capacitação com profissionais com experiência real em imobiliária, não teoria de curso online. O que aprendemos em mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net), aplicamos na sua.
+A L8 Capital oferece capacitação com profissionais com experiência real em imobiliária, não teoria de curso online. O que aprendemos em mais de 400 imobiliárias no Brasil através do [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net), aplicamos na sua.
 
 **1. Workshop Presencial/Online**
 - 4 horas de conteúdo prático
@@ -1583,7 +1583,7 @@ ${location.metadata.realEstateAgencies ? `\n### Realidade ${location.name}\n\nDa
 
 ## Metodologia L8 Capital
 
-A L8 Capital oferece treinamento operacional com processos otimizados. O que aprendemos em mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net), aplicamos na sua. Menos retrabalho, mais produtividade.
+A L8 Capital oferece treinamento operacional com processos otimizados. O que aprendemos em mais de 400 imobiliárias no Brasil através do [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net), aplicamos na sua. Menos retrabalho, mais produtividade.
 
 **1. Diagnóstico Operacional**
 - Auditoria dos processos atuais

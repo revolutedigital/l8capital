@@ -99,7 +99,7 @@ export function Services() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: prefersReducedMotion ? 0.01 : 0.4 }}
                 >
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className={`grid gap-6 ${category === 'financeiro' ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-2 lg:grid-cols-3'}`}>
                     {services.map((service, index) => {
                       const Icon = iconMap[service.icon] || IconShield
                       return (

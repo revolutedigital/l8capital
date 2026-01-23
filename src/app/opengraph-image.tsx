@@ -99,7 +99,7 @@ export default async function Image() {
             }}
           >
             <span style={{ fontSize: 48, fontWeight: 700, color: '#2E8B57' }}>
-              24 anos
+              +20 anos
             </span>
             <span style={{ fontSize: 18, color: 'rgba(255,255,255,0.7)' }}>
               Experiência
@@ -113,10 +113,10 @@ export default async function Image() {
             }}
           >
             <span style={{ fontSize: 48, fontWeight: 700, color: '#2E8B57' }}>
-              R$ 2.050
+              100%
             </span>
             <span style={{ fontSize: 18, color: 'rgba(255,255,255,0.7)' }}>
-              Economia/mês
+              Tecnologia própria
             </span>
           </div>
         </div>

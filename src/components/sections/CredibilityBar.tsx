@@ -112,20 +112,20 @@ export function CredibilityBar() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : 0.4 }}
-          className="flex flex-wrap justify-center items-center gap-4 md:gap-6"
+          className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16"
         >
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="h-16 w-36 md:h-20 md:w-44 grayscale brightness-200 opacity-80 hover:grayscale-0 hover:brightness-100 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
+              className="h-12 w-28 md:h-14 md:w-32 grayscale brightness-200 opacity-80 hover:grayscale-0 hover:brightness-100 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
             >
               <Image
                 src={partner.logo}
                 alt={partner.name}
-                width={160}
-                height={72}
+                width={120}
+                height={48}
                 loading="lazy"
-                className="object-contain w-full h-full"
+                className="object-contain w-auto h-full max-w-full"
               />
             </div>
           ))}
@@ -139,7 +139,7 @@ export function CredibilityBar() {
           transition={{ duration: prefersReducedMotion ? 0.01 : 0.5, delay: prefersReducedMotion ? 0 : 0.5 }}
           className="text-center text-secondary-300 mt-10 text-lg"
         >
-          Solução validada em <span className="font-semibold text-white">+400 imobiliárias</span> no Centro-Oeste.{' '}
+          Solução validada em <span className="font-semibold text-white">+400 imobiliárias</span> no Brasil.{' '}
           <span className="text-accent-400 font-semibold">Agora chegando a São Paulo.</span>
         </motion.p>
       </div>

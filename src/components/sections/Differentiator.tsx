@@ -23,10 +23,10 @@ export function Differentiator() {
             Nosso Diferencial
           </span>
           <h2 className="heading-2 text-gray-900 dark:text-white mb-4">
-            Por que a L8 é diferente?
+            Por que somos diferentes?
           </h2>
           <p className="body-large text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Compare e veja por que mais de 400 imobiliárias escolheram a L8
+            Compare e veja por que mais de 400 imobiliárias escolheram a nossa plataforma ASF
           </p>
         </motion.div>
 
@@ -123,7 +123,7 @@ export function Differentiator() {
         >
           <div className="inline-block bg-gradient-to-r from-primary-50 via-white to-primary-50 dark:from-primary-900/30 dark:via-gray-800 dark:to-primary-900/30 rounded-2xl px-8 py-6 border border-primary-100 dark:border-primary-800">
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-2">
-              24 anos de experiência no mercado de seguros.
+              +20 anos de experiência no mercado de seguros.
             </p>
             <p className="text-xl font-bold text-gray-900 dark:text-white">
               Agora do lado de quem realmente importa:{' '}

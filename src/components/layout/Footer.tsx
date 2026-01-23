@@ -103,7 +103,7 @@ export function Footer() {
             </Link>
 
             <p className="text-secondary-400 mb-6 max-w-xs">
-              Plataforma digital de soluções financeiras que fortalece imobiliárias há mais de 20 anos.
+              Plataforma digital de soluções financeiras para imobiliárias. Utilizamos a tecnologia da plataforma ASF (Alugue sem Fiador), validada por +400 imobiliárias no Brasil.
             </p>
 
             <div className="flex items-center gap-2 text-secondary-500 text-sm mb-6">

@@ -45,17 +45,17 @@ export function Validation() {
               </div>
               <div>
                 <h3 className="heading-3 text-primary-900 dark:text-white mb-2">
-                  +{STATS.agencies} imobiliárias já usam esta solução
+                  +400 imobiliárias já usam esta solução
                 </h3>
                 <p className="text-secondary-700 dark:text-secondary-300">
-                  No Centro-Oeste, a{' '}
+                  No Brasil, a{' '}
                   <a
                     href="https://aluguesemfiador.net"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-accent-600 dark:text-accent-400 font-bold underline decoration-2 underline-offset-2 hover:text-accent-700 dark:hover:text-accent-300 transition-colors"
                   >
-                    Alugue sem Fiador
+                    plataforma ASF (Alugue sem Fiador)
                   </a>{' '}
                   opera com a mesma tecnologia e modelo que estamos trazendo para São Paulo.
                 </p>
@@ -79,7 +79,7 @@ export function Validation() {
             <div className="border-t border-secondary-200 dark:border-primary-700 pt-6 mb-6">
               <p className="text-lg text-secondary-700 dark:text-secondary-300 italic">
                 "Agora é a vez de São Paulo conhecer o modelo que está transformando o mercado
-                imobiliário no Centro-Oeste."
+                imobiliário no país."
               </p>
             </div>
 

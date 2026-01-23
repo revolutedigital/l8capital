@@ -63,7 +63,7 @@ O valor do prêmio depende principalmente de:
 
 ## Como a L8 Capital pode ajudar
 
-A L8 Capital é uma plataforma digital de soluções financeiras para imobiliárias em São Paulo. Utilizamos a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Centro-Oeste através do nosso parceiro estratégico [Alugue sem Fiador](https://aluguesemfiador.net).
+A L8 Capital é uma plataforma digital de soluções financeiras para imobiliárias em São Paulo. Utilizamos a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Brasil através do nosso parceiro estratégico [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net).
 
 Na L8, oferecemos:
 - Taxas competitivas negociadas em volume
@@ -128,7 +128,7 @@ Bancos tradicionais cobram taxas elevadas porque:
 
 ## O modelo L8 Capital
 
-A L8 Capital utiliza a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Centro-Oeste através do nosso parceiro estratégico [Alugue sem Fiador](https://aluguesemfiador.net). Esse volume consolidado nos permite negociar taxas muito mais competitivas do que você conseguiria sozinho.
+A L8 Capital utiliza a mesma tecnologia e modelo de negócio já validado por mais de 400 imobiliárias no Brasil através do nosso parceiro estratégico [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net). Esse volume consolidado nos permite negociar taxas muito mais competitivas do que você conseguiria sozinho.
 
 A economia pode ser instantânea e vai depender da sua volumetria. Além disso, podemos conversar sobre antecipação de recebíveis e fluxo de caixa.
 
@@ -179,7 +179,7 @@ O seguro incêndio pode ser fonte de receita recorrente:
 
 ## Como a L8 Capital pode ajudar
 
-A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net). Não estamos testando algo novo - estamos trazendo para São Paulo algo que já funciona.
+A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Brasil através do [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net). Não estamos testando algo novo - estamos trazendo para São Paulo algo que já funciona.
 
 **Próximo passo:** [Descubra quanto sua imobiliária pode ganhar](/#contato) com seguros.
     `,
@@ -227,7 +227,7 @@ A L8 Capital utiliza tecnologia própria e o mesmo modelo já validado por mais 
 
 ## Como a L8 Capital pode ajudar
 
-A L8 Capital oferece todas as modalidades de garantia locatícia: seguro fiança, capitalização e também orientação sobre caução. Utilizamos tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Centro-Oeste através do [Alugue sem Fiador](https://aluguesemfiador.net).
+A L8 Capital oferece todas as modalidades de garantia locatícia: seguro fiança, capitalização e também orientação sobre caução. Utilizamos tecnologia própria e o mesmo modelo já validado por mais de 400 imobiliárias no Brasil através do [plataforma ASF (Alugue sem Fiador)](https://aluguesemfiador.net).
 
 Nosso modelo funciona para todas as imobiliárias, pois a tecnologia reduz o operacional e temos um time especializado para apoiar você em todo o processo.
 

@@ -38,11 +38,6 @@ export const SERVICES = {
       description: 'Alternativa moderna, onde seu inquilino aplica o dinheiro (e ainda pode ser sorteado) e o proprietário tem garantia no contrato.',
       icon: 'piggy-bank',
     },
-    {
-      title: 'Consórcio',
-      description: 'Ofereça aos seus clientes uma forma inteligente de adquirir imóveis. Nova fonte de receita recorrente para sua imobiliária.',
-      icon: 'home',
-    },
   ],
   financeiro: [
     {
@@ -59,6 +54,11 @@ export const SERVICES = {
       title: 'Gestão de Fundo de Reserva',
       description: '',
       icon: 'wallet',
+    },
+    {
+      title: 'Consórcio',
+      description: '',
+      icon: 'home',
     },
   ],
   capacitacao: [
@@ -100,7 +100,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: 'O que significa "modelo validado em 400 imobiliárias"?',
-    answer: 'No Centro-Oeste, nosso parceiro estratégico, Alugue sem Fiador, já opera com a mesma tecnologia e modelo de negócio há anos. São mais de 400 imobiliárias utilizando nossa plataforma no dia a dia. Não estamos testando algo novo. Estamos trazendo para São Paulo algo que já funciona.',
+    answer: 'No Brasil, nosso parceiro estratégico, Alugue sem Fiador (ASF), já opera com a mesma tecnologia e modelo de negócio há anos. São mais de 400 imobiliárias utilizando a plataforma ASF no dia a dia. Não estamos testando algo novo. Estamos trazendo para São Paulo algo que já funciona.',
   },
   {
     question: 'Como vocês tratam os dados dos clientes? Estão em conformidade com a LGPD?',
