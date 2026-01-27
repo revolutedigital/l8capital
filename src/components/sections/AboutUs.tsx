@@ -65,7 +65,7 @@ export function AboutUs() {
 
             {/* Intro paragraph */}
             <p className="text-lg text-secondary-600 dark:text-secondary-300 mb-6 leading-relaxed">
-              Imobiliárias trabalham muito, faturam bem, mas operam com um modelo financeiro ineficiente.
+              Imobiliárias trabalham muito, faturam bem, mas poderiam operar com muito mais leveza e resultado quando a parte financeira é ajustada do jeito certo. É possível transformar o financeiro em um motor de crescimento e não só em uma rotina operacional.
             </p>
 
             <p className="text-secondary-600 dark:text-secondary-400 mb-8 leading-relaxed">
