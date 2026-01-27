@@ -92,7 +92,7 @@ export function AboutUs() {
                     <div className="w-8 h-8 rounded-lg bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-4 h-4 text-accent-600 dark:text-accent-400" />
                     </div>
-                    <span className="text-secondary-700 dark:text-secondary-300 text-sm whitespace-nowrap">{item.text}</span>
+                    <span className="text-secondary-700 dark:text-secondary-300 text-sm">{item.text}</span>
                   </motion.li>
                 ))}
               </ul>
@@ -108,7 +108,7 @@ export function AboutUs() {
             className="relative"
           >
             {/* Main card with partnership */}
-            <div className="relative bg-gradient-to-br from-primary-800 to-primary-900 rounded-3xl p-8 md:p-10 shadow-2xl">
+            <div className="relative bg-gradient-to-br from-primary-800 to-primary-900 rounded-3xl p-6 md:p-10 shadow-2xl overflow-hidden">
               {/* Decorative corner */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent-500/10 rounded-bl-[100px]" />
 
@@ -117,50 +117,50 @@ export function AboutUs() {
                 <p className="text-primary-300 text-sm font-medium uppercase tracking-wider mb-4">
                   Parceria Estratégica
                 </p>
-                <div className="flex items-center gap-6">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                <div className="flex items-center gap-4 md:gap-6">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4">
                     <Image
                       src="/images/logos/l8-logo_transp_branco.webp"
                       alt="L8 Capital"
                       width={80}
                       height={80}
-                      className="h-12 w-auto object-contain"
+                      className="h-9 md:h-12 w-auto object-contain"
                     />
                   </div>
-                  <div className="text-2xl text-accent-400 font-light">+</div>
+                  <div className="text-xl md:text-2xl text-accent-400 font-light">+</div>
                   <a
                     href="https://aluguesemfiador.net"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-colors"
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 hover:bg-white/20 transition-colors"
                   >
                     <Image
                       src="/images/logos/parceiro2.webp"
                       alt="ASF - Alugue sem Fiador"
                       width={120}
                       height={80}
-                      className="h-12 w-auto object-contain brightness-0 invert"
+                      className="h-9 md:h-12 w-auto object-contain brightness-0 invert"
                     />
                   </a>
                 </div>
               </div>
 
               {/* Stats highlight */}
-              <div className="relative z-10 grid grid-cols-2 gap-4 mb-8">
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-                  <div className="text-3xl font-bold text-accent-400 mb-1">+20</div>
+              <div className="relative z-10 grid grid-cols-2 gap-3 md:gap-4 mb-8">
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/10">
+                  <div className="text-2xl md:text-3xl font-bold text-accent-400 mb-1">+20</div>
                   <p className="text-primary-200 text-sm">anos de experiência</p>
                   <p className="text-primary-400 text-xs">no mercado de seguros</p>
                 </div>
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-                  <div className="text-3xl font-bold text-accent-400 mb-1">+400</div>
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/10">
+                  <div className="text-2xl md:text-3xl font-bold text-accent-400 mb-1">+400</div>
                   <p className="text-primary-200 text-sm">imobiliárias</p>
                   <p className="text-primary-400 text-xs">via plataforma ASF</p>
                 </div>
               </div>
 
               {/* ASF Highlight */}
-              <div className="relative z-10 bg-accent-500/20 backdrop-blur-sm rounded-xl p-5 border border-accent-400/30">
+              <div className="relative z-10 bg-accent-500/20 backdrop-blur-sm rounded-xl p-4 md:p-5 border border-accent-400/30">
                 <div className="flex items-start gap-3">
                   <Target className="w-5 h-5 text-accent-400 flex-shrink-0 mt-0.5" />
                   <div>
