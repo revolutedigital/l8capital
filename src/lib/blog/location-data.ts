@@ -39,7 +39,7 @@ export const brazil: Location = {
   metadata: {
     population: 203000000,
     keyInsights: [
-      'Mercado imobiliário de R$ 1,2 trilhão em 2025',
+      'Mercado imobiliário de R$ 1,2 trilhão',
       'Lei do Inquilinato (Lei 8.245/91) regulamenta locações',
       'Crescimento de 15% ao ano em seguros fiança',
     ],
@@ -81,7 +81,7 @@ export const saoPauloCity: Location = {
     keyInsights: [
       'Maior mercado de locação residencial da América Latina',
       'Mais de 8.500 imobiliárias ativas na capital',
-      'Crescimento de 12% em contratos de locação em 2025',
+      'Crescimento de 12% em contratos de locação',
       'Seguro fiança utilizado em 45% dos contratos',
     ],
     economicProfile: 'premium',
