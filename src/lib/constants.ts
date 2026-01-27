@@ -84,7 +84,7 @@ export const SERVICES = {
 export const FAQ_ITEMS = [
   {
     question: 'Quanto custa para começar?',
-    answer: 'A análise inicial é 100% gratuita. E você só terá aumento de receita. Diferente de consultorias que cobram antes de entregar, a L8 aposta junto com você. Sem mensalidade fixa obrigatória.',
+    answer: 'A análise inicial é 100% gratuita. E você só terá aumento de receita. Diferente de consultorias que cobram antes de entregar, a L8 aposta junto com você. Sem mensalidade.',
   },
   {
     question: 'Quanto tempo para ver resultados?',

@@ -121,7 +121,7 @@ export function Hero() {
               className="flex flex-wrap gap-x-3 gap-y-2"
             >
               {[
-                { text: 'Sem mensalidade fixa', icon: Check },
+                { text: 'Sem mensalidade', icon: Check },
                 { text: 'Diagnóstico financeiro gratuito', icon: Shield },
                 { text: `${STATS.experience} anos de mercado`, icon: Zap },
               ].map((i) => (
