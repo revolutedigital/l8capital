@@ -83,7 +83,7 @@ export function Partnership() {
           </div>
 
           <h2 className="heading-2 text-primary-900 dark:text-white mb-4">
-            Uma parceria que já funciona no mercado
+            Uma parceria de sucesso consolidado
           </h2>
         </motion.div>
 
