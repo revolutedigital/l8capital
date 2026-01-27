@@ -54,7 +54,7 @@ export function AboutUs() {
             {/* Main heading */}
             <h2
               id="about-heading"
-              className="text-[1.75rem] md:text-[2rem] font-display font-bold leading-tight text-primary-900 dark:text-white mb-6"
+              className="text-[1.75rem] md:text-[1.8rem] font-display font-bold leading-tight text-primary-900 dark:text-white mb-6"
             >
               A L8 Capital nasceu para resolver um problema{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-secondary-500">
@@ -92,7 +92,7 @@ export function AboutUs() {
                     <div className="w-8 h-8 rounded-lg bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-4 h-4 text-accent-600 dark:text-accent-400" />
                     </div>
-                    <span className="text-secondary-700 dark:text-secondary-300">{item.text}</span>
+                    <span className="text-secondary-700 dark:text-secondary-300 text-sm whitespace-nowrap">{item.text}</span>
                   </motion.li>
                 ))}
               </ul>
