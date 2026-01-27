@@ -64,7 +64,7 @@ export function AboutUs() {
             </h2>
 
             {/* Intro paragraph */}
-            <p className="text-lg text-secondary-600 dark:text-secondary-300 mb-6 leading-relaxed">
+            <p className="text-secondary-600 dark:text-secondary-400 mb-6 leading-relaxed">
               Imobiliárias trabalham muito, faturam bem, mas poderiam operar com muito mais leveza e resultado quando a parte financeira é ajustada do jeito certo. É possível transformar o financeiro em um motor de crescimento e não só em uma rotina operacional.
             </p>
 
