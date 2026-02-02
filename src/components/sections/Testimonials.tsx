@@ -47,12 +47,12 @@ const testimonials = [
     image: '/images/logos/dep-thomaz-ugri.webp',
   },
   {
-    name: 'Luciano Tannus',
+    name: 'Glauber Riekstins de Amorim',
     role: 'Corretor de Imóveis',
-    company: '',
-    content: 'Há aproximadamente dois anos nos oferece agilidade na efetivação das locações. A parceria facilita muito o dia a dia e aumenta nossa taxa de conversão.',
-    yearsSince: 2022,
-    image: '/images/logos/dep-luciano-tannus.webp',
+    company: 'Amorim Imóveis',
+    content: 'Desde que aderimos a essa modalidade no escritório, conseguimos atender melhor nossos clientes e oferecer uma garantia muito mais segura. O resultado foi imediato na conversão de locações.',
+    yearsSince: 2019,
+    image: '/images/logos/dep-glauber-amorim.webp',
   },
 ]
 
