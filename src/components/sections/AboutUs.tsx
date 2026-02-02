@@ -63,15 +63,14 @@ export function AboutUs() {
               no mercado imobiliário.
             </h2>
 
-            {/* Intro paragraph */}
+            {/* Intro paragraphs */}
             <p className="text-secondary-600 dark:text-secondary-400 mb-6 leading-relaxed">
-              Imobiliárias trabalham muito, faturam bem, mas poderiam operar com muito mais leveza e resultado quando a parte financeira é ajustada do jeito certo. É possível transformar o financeiro em um motor de crescimento e não só em uma rotina operacional.
+              Somos um grupo especialista em soluções que geram aumento de receita e redução de custos para imobiliárias. Atuamos com garantias locatícias, otimização de fluxo de caixa e redução de custos operacionais e financeiros — tudo por meio de uma plataforma exclusiva e unificada.
             </p>
 
             <p className="text-secondary-600 dark:text-secondary-400 mb-8 leading-relaxed">
-              Enquanto a maioria das soluções vende produtos isolados, a L8 atua como{' '}
-              <strong className="text-primary-900 dark:text-white">parceira estratégica</strong>, olhando para o que
-              realmente importa para o dono: receita, custo e controle operacional.
+              Como sócios, temos a{' '}
+              <strong className="text-primary-900 dark:text-white">ASF (Alugue sem Fiador)</strong>, que há mais de 20 anos leva soluções para mais de 400 imobiliárias no Brasil, com tecnologia, velocidade, menos operacional, mais assertividade nas locações e um time que torna todo o processo humanizado.
             </p>
 
             {/* Ecosystem description */}
