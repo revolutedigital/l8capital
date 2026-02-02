@@ -59,7 +59,7 @@ export function Validation() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="max-w-3xl mx-auto mb-12"
+          className="mb-12"
         >
           <Card className="p-8 md:p-10">
             <div className="flex items-start gap-4 mb-6">
